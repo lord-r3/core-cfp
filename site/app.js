@@ -6,6 +6,7 @@ const state = {
   conferences: [],
   search: "",
   ranks: new Set(["A*", "A", "B"]),
+  forCode: "",
   hideUnknown: false,
   sortBy: "deadline",
 };
@@ -114,6 +115,9 @@ function applyFilters() {
       (e) => e.acronym.toLowerCase().includes(q) || e.title.toLowerCase().includes(q)
     );
   }
+  if (state.forCode) {
+    items = items.filter((e) => (e.field_of_research || []).some((f) => f.code === state.forCode));
+  }
   if (state.hideUnknown) {
     items = items.filter((e) => e.deadline);
   }
@@ -134,6 +138,22 @@ function applyFilters() {
   return items;
 }
 
+function populateForFilter(conferences) {
+  const byCode = new Map();
+  for (const entry of conferences) {
+    for (const f of entry.field_of_research || []) {
+      byCode.set(f.code, f.name);
+    }
+  }
+  const options = [...byCode.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  for (const [code, name] of options) {
+    const option = document.createElement("option");
+    option.value = code;
+    option.textContent = `${code} – ${name}`;
+    els.forFilter.appendChild(option);
+  }
+}
+
 function render() {
   const items = applyFilters();
   els.list.innerHTML = items.map(renderCard).join("");
@@ -146,6 +166,7 @@ async function init() {
   els.emptyState = document.getElementById("empty-state");
   els.resultCount = document.getElementById("result-count");
   els.search = document.getElementById("search");
+  els.forFilter = document.getElementById("for-filter");
   els.hideUnknown = document.getElementById("hide-unknown");
   els.sortBy = document.getElementById("sort-by");
   els.generatedAt = document.getElementById("generated-at");
@@ -168,6 +189,10 @@ async function init() {
       render();
     });
   });
+  els.forFilter.addEventListener("change", (e) => {
+    state.forCode = e.target.value;
+    render();
+  });
   els.hideUnknown.addEventListener("change", (e) => {
     state.hideUnknown = e.target.checked;
     render();
@@ -182,6 +207,7 @@ async function init() {
     const data = await res.json();
     state.conferences = data.conferences;
     els.generatedAt.textContent = new Date(data.generated_at).toLocaleString("de-DE");
+    populateForFilter(state.conferences);
   } catch (err) {
     els.emptyState.hidden = false;
     els.emptyState.textContent = "Daten konnten nicht geladen werden.";

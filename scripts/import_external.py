@@ -52,6 +52,15 @@ CONFERENCE_DEADLINES_FAMILY = [
 DEADLINE_FORMATS = ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M")
 
 
+def normalize_dblp(value):
+    """ccf-deadlines ships a bare dblp suffix (e.g. "ccs"); the sec-deadlines family
+    sometimes already has a full URL. Normalize both to a full dblp venue URL."""
+    value = (value or "").strip()
+    if not value:
+        return None
+    return value if value.startswith("http") else f"https://dblp.org/db/conf/{value}/"
+
+
 def parse_deadline_str(value):
     value = str(value or "").strip()
     if not value or value.upper() == "TBD":
@@ -131,6 +140,7 @@ def import_ccf_deadlines(core_index, results):
                     "cfp_url": conf.get("link"),
                     "event_date": conf.get("date"),
                     "place": conf.get("place"),
+                    "dblp_url": normalize_dblp(entry.get("dblp")),
                 },
             )
             matched += 1
@@ -184,6 +194,7 @@ def import_conference_deadlines_family(core_index, results):
             if best is None:
                 continue
             deadline_dt, entry = best
+            dblp_raw = next((e.get("dblp") for e in group_entries if e.get("dblp")), None)
 
             results[str(match["id"])] = {
                 "source": name,
@@ -194,6 +205,7 @@ def import_conference_deadlines_family(core_index, results):
                 "cfp_url": entry.get("link"),
                 "event_date": entry.get("date"),
                 "place": entry.get("place"),
+                "dblp_url": normalize_dblp(dblp_raw),
             }
             matched += 1
         print(f"  matched {matched} conferences from {name}")

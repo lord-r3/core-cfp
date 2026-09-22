@@ -102,13 +102,34 @@ main.wrap { padding-top: 22px; padding-bottom: 40px; }
   color: var(--text-muted);
 }
 
-#sort-by {
+#sort-by, #for-filter, #region-filter, #format-filter {
   padding: 7px 10px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg);
   color: var(--text);
   font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.actions button {
+  padding: 7px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: var(--bg-alt);
 }
 
 .legend {
@@ -219,6 +240,25 @@ main.wrap { padding-top: 22px; padding-bottom: 40px; }
 }
 
 .cfp-link { font-size: 0.82rem; }
+
+.ics-link {
+  font-size: 0.82rem;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: inherit;
+}
+
+.accept-rate {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
 
 .conf-event {
   color: var(--text-muted);

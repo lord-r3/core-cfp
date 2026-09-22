@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,59 +12,74 @@
   <div class="wrap">
     <h1>CORE CFP Deadlines</h1>
     <p class="subtitle">
-      Einreichungsfristen für CORE-gerankte (A*/A/B) Konferenzen der Informatik.
-      Rankings stammen aus dem offiziellen <a href="https://portal.core.edu.au/conf-ranks/" target="_blank" rel="noopener">CORE-Portal</a>.
-      Deadlines sind entweder <strong>direkt verifiziert</strong> oder
-      <strong>aus anderen Community-Trackern übernommen</strong> &mdash; siehe Legende.
+      Submission deadlines for CORE-ranked (A*/A/B) computer science conferences.
+      Rankings come from the official <a href="https://portal.core.edu.au/conf-ranks/" target="_blank" rel="noopener">CORE portal</a>.
+      Deadlines are either <strong>directly verified</strong> or
+      <strong>imported from other community trackers</strong> &mdash; see legend.
     </p>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="controls" aria-label="Filter">
-    <input id="search" type="search" placeholder="Suche nach Akronym oder Titel…" aria-label="Suche" />
+  <section class="controls" aria-label="Filters">
+    <input id="search" type="search" placeholder="Search by acronym or title…" aria-label="Search" />
 
-    <div class="rank-filters" role="group" aria-label="Rank-Filter">
+    <div class="rank-filters" role="group" aria-label="Rank filter">
       <label><input type="checkbox" class="rank-toggle" value="A*" checked /> A*</label>
       <label><input type="checkbox" class="rank-toggle" value="A" checked /> A</label>
       <label><input type="checkbox" class="rank-toggle" value="B" checked /> B</label>
     </div>
 
-    <select id="for-filter" aria-label="Fachgebiet (FoR)">
-      <option value="">Alle Fachgebiete</option>
+    <select id="for-filter" aria-label="Field of research">
+      <option value="">All fields of research</option>
+    </select>
+
+    <select id="region-filter" aria-label="Region">
+      <option value="">All regions</option>
+    </select>
+
+    <select id="format-filter" aria-label="Format">
+      <option value="">All formats</option>
+      <option value="virtual">Virtual</option>
+      <option value="hybrid">Hybrid</option>
     </select>
 
     <label class="hide-unknown">
       <input type="checkbox" id="hide-unknown" />
-      Nur Konferenzen mit bekannter Deadline
+      Only conferences with a known deadline
     </label>
 
-    <select id="sort-by" aria-label="Sortierung">
-      <option value="deadline">Sortieren: nächste Deadline</option>
-      <option value="rank">Sortieren: Rank</option>
-      <option value="alpha">Sortieren: Akronym (A-Z)</option>
+    <select id="sort-by" aria-label="Sort order">
+      <option value="deadline">Sort: nearest deadline</option>
+      <option value="rank">Sort: rank</option>
+      <option value="alpha">Sort: acronym (A-Z)</option>
     </select>
   </section>
 
+  <section class="actions" aria-label="Actions">
+    <button id="copy-link" type="button">Copy link to this view</button>
+    <button id="export-ics" type="button">Export selection (.ics)</button>
+  </section>
+
   <p class="legend">
-    <span class="badge status-verified">verifiziert</span>
-    <span class="badge status-community">community (Quelle)</span>
-    <span class="badge status-unknown">keine Deadline bekannt</span>
-    &mdash; <a id="contribute-link" href="https://github.com/" target="_blank" rel="noopener">Falsche oder fehlende Deadline? Beitragen →</a>
+    <span class="badge status-verified">verified</span>
+    <span class="badge status-community">community (source)</span>
+    <span class="badge status-unknown">no known deadline</span>
+    &mdash; <a id="contribute-link" href="https://github.com/" target="_blank" rel="noopener">Wrong or missing deadline? Contribute →</a>
   </p>
 
   <p id="result-count" class="result-count"></p>
 
   <ul id="conference-list" class="conference-list"></ul>
-  <p id="empty-state" class="empty-state" hidden>Keine Konferenzen gefunden.</p>
+  <p id="empty-state" class="empty-state" hidden>No conferences found.</p>
 </main>
 
 <footer class="page-footer">
   <div class="wrap">
     <p>
-      Community-Projekt, keine offizielle CORE-Ressource. Rankings: CORE (<span id="core-source"></span>).
-      Zuletzt aktualisiert: <span id="generated-at">–</span>.
-      Quellcode auf <a id="repo-link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
+      Community project, not an official CORE resource. Rankings: CORE (<span id="core-source"></span>).
+      Last updated: <span id="generated-at">–</span>.
+      Source on <a id="repo-link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
     </p>
   </div>
 </footer>

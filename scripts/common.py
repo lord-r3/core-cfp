@@ -30,6 +30,112 @@ FOR_CODE_NAMES = {
 }
 
 
+# ponytail: substring matching over a fixed, non-exhaustive country list, not a real
+# geocoder. An unrecognized or ambiguous country name falls through to None rather than
+# guessing. Upgrade path: swap in a proper country/region lookup if coverage complaints
+# pile up. Checked longest-substring-first so e.g. "South Korea" doesn't get shadowed.
+REGION_BY_COUNTRY = {
+    "UNITED STATES": "North America",
+    "USA": "North America",
+    "US": "North America",
+    "U.S.A": "North America",
+    "CANADA": "North America",
+    "MEXICO": "North America",
+    "UNITED KINGDOM": "Europe",
+    "ENGLAND": "Europe",
+    "SCOTLAND": "Europe",
+    "Wales": "Europe",
+    "UK": "Europe",
+    "IRELAND": "Europe",
+    "GERMANY": "Europe",
+    "FRANCE": "Europe",
+    "ITALY": "Europe",
+    "SPAIN": "Europe",
+    "NETHERLANDS": "Europe",
+    "SWITZERLAND": "Europe",
+    "AUSTRIA": "Europe",
+    "BELGIUM": "Europe",
+    "PORTUGAL": "Europe",
+    "POLAND": "Europe",
+    "SWEDEN": "Europe",
+    "NORWAY": "Europe",
+    "DENMARK": "Europe",
+    "FINLAND": "Europe",
+    "GREECE": "Europe",
+    "CZECH": "Europe",
+    "HUNGARY": "Europe",
+    "ROMANIA": "Europe",
+    "CROATIA": "Europe",
+    "SLOVENIA": "Europe",
+    "SLOVAKIA": "Europe",
+    "CYPRUS": "Europe",
+    "MALTA": "Europe",
+    "ICELAND": "Europe",
+    "LUXEMBOURG": "Europe",
+    "BULGARIA": "Europe",
+    "ESTONIA": "Europe",
+    "LATVIA": "Europe",
+    "LITHUANIA": "Europe",
+    "SOUTH KOREA": "Asia",
+    "HONG KONG": "Asia",
+    "CHINA": "Asia",
+    "JAPAN": "Asia",
+    "KOREA": "Asia",
+    "SINGAPORE": "Asia",
+    "INDIA": "Asia",
+    "TAIWAN": "Asia",
+    "THAILAND": "Asia",
+    "VIETNAM": "Asia",
+    "MALAYSIA": "Asia",
+    "INDONESIA": "Asia",
+    "PHILIPPINES": "Asia",
+    "ISRAEL": "Asia",
+    "UAE": "Asia",
+    "SAUDI ARABIA": "Asia",
+    "QATAR": "Asia",
+    "AUSTRALIA": "Oceania",
+    "NEW ZEALAND": "Oceania",
+    "MOROCCO": "Africa",
+    "SOUTH AFRICA": "Africa",
+    "EGYPT": "Africa",
+    "TUNISIA": "Africa",
+    "KENYA": "Africa",
+    "NIGERIA": "Africa",
+    "GHANA": "Africa",
+    "BRAZIL": "South America",
+    "ARGENTINA": "South America",
+    "CHILE": "South America",
+    "COLOMBIA": "South America",
+    "PERU": "South America",
+    "URUGUAY": "South America",
+}
+
+
+def derive_region(place):
+    """Best-effort region from a free-text place string like "Denver, CO, USA" -
+    matches the last comma-separated segment against REGION_BY_COUNTRY. None if
+    `place` is missing or nothing matches."""
+    if not place:
+        return None
+    tail = place.split(",")[-1].strip().upper()
+    for country in sorted(REGION_BY_COUNTRY, key=len, reverse=True):
+        if country in tail:
+            return REGION_BY_COUNTRY[country]
+    return None
+
+
+def derive_format(place):
+    """"virtual"/"hybrid" if that keyword shows up in the place text, else None -
+    absence of the keyword means unknown, not confirmed in-person."""
+    if not place:
+        return None
+    if re.search(r"\bhybrid\b", place, re.IGNORECASE):
+        return "hybrid"
+    if re.search(r"\bvirtual\b|\bonline\b", place, re.IGNORECASE):
+        return "virtual"
+    return None
+
+
 def normalize_acronym(text: str) -> str:
     """Fold a conference name down to bare alphanumerics for fuzzy matching,
     e.g. "S&P (Oakland)" and "SP" both normalize to "SP"."""

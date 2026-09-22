@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Merge the CORE ranking export with community overrides and imported
-community deadlines into site/data/conferences.json, which the static
-frontend reads.
+community data into site/data/conferences.json, which the static frontend reads.
 
-Precedence per conference: a verified override (data/overrides/*.yml) always
-wins; otherwise a community-sourced deadline (data/external_cache.json) is
-used and clearly flagged as such; otherwise no deadline is known.
+Deadline precedence per conference: a verified override (data/overrides/*.yml) always
+wins; otherwise a community-sourced deadline (data/external_cache.json) is used and
+clearly flagged as such; otherwise no deadline is known. Everything else attached here
+(place/region/format, DBLP link, acceptance rates, publisher/open-access) is
+supplementary - looked up independently of that precedence chain, since a conference can
+have e.g. a known acceptance rate regardless of whether its deadline is verified.
 """
 import json
 import sys
@@ -15,10 +17,11 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ROOT, load_core_rows, normalize_acronym  # noqa: E402
+from common import ROOT, derive_format, derive_region, load_core_rows, normalize_acronym  # noqa: E402
 
 OVERRIDES_DIR = ROOT / "data" / "overrides"
 EXTERNAL_CACHE = ROOT / "data" / "external_cache.json"
+ACCEPTANCE_RATES_CACHE = ROOT / "data" / "acceptance_rates.json"
 OUTPUT_JSON = ROOT / "site" / "data" / "conferences.json"
 
 
@@ -35,10 +38,10 @@ def load_overrides():
     return overrides
 
 
-def load_external_cache():
-    if not EXTERNAL_CACHE.exists():
+def load_json_cache(path):
+    if not path.exists():
         return {}
-    return json.loads(EXTERNAL_CACHE.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def index_overrides(overrides, rows):
@@ -66,7 +69,7 @@ def index_overrides(overrides, rows):
     return by_id, by_acronym
 
 
-def merge(rows, by_id, by_acronym, external_cache):
+def merge(rows, by_id, by_acronym, external_cache, acceptance_rates_cache):
     out = []
     for row in rows:
         override = by_id.get(row["id"]) or by_acronym.get(normalize_acronym(row["acronym"]))
@@ -79,7 +82,6 @@ def merge(rows, by_id, by_acronym, external_cache):
                 timezone=override.get("timezone", "AoE"),
                 cfp_url=override.get("cfp_url"),
                 event_date=None,
-                place=None,
                 year=override.get("year"),
                 notes=override.get("notes"),
                 status="verified",
@@ -94,7 +96,6 @@ def merge(rows, by_id, by_acronym, external_cache):
                 timezone=external.get("timezone"),
                 cfp_url=external.get("cfp_url"),
                 event_date=external.get("event_date"),
-                place=external.get("place"),
                 year=None,
                 notes=None,
                 status="community",
@@ -109,7 +110,6 @@ def merge(rows, by_id, by_acronym, external_cache):
                 timezone=None,
                 cfp_url=None,
                 event_date=None,
-                place=None,
                 year=None,
                 notes=None,
                 status="unknown",
@@ -118,6 +118,22 @@ def merge(rows, by_id, by_acronym, external_cache):
                 updated_by=None,
                 checked_at=None,
             )
+
+        # Supplementary fields - independent of the deadline precedence above.
+        place = None
+        if override and override.get("place"):
+            place = override.get("place")
+        elif external and external.get("place"):
+            place = external.get("place")
+        entry.update(
+            place=place,
+            region=derive_region(place),
+            format=derive_format(place),
+            dblp_url=(external or {}).get("dblp_url"),
+            publisher=(override or {}).get("publisher"),
+            open_access=(override or {}).get("open_access"),
+            acceptance_rates=acceptance_rates_cache.get(str(row["id"]), []),
+        )
         out.append(entry)
 
     out.sort(key=lambda e: (e["deadline"] is None, e["deadline"] or "", e["acronym"]))
@@ -131,9 +147,10 @@ def merge(rows, by_id, by_acronym, external_cache):
 def main():
     rows = load_core_rows()
     overrides = load_overrides()
-    external_cache = load_external_cache()
+    external_cache = load_json_cache(EXTERNAL_CACHE)
+    acceptance_rates_cache = load_json_cache(ACCEPTANCE_RATES_CACHE)
     by_id, by_acronym = index_overrides(overrides, rows)
-    database = merge(rows, by_id, by_acronym, external_cache)
+    database = merge(rows, by_id, by_acronym, external_cache, acceptance_rates_cache)
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_JSON.write_text(json.dumps(database, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -141,10 +158,13 @@ def main():
     counts = {"verified": 0, "community": 0, "unknown": 0}
     for e in database["conferences"]:
         counts[e["status"]] += 1
+    with_rates = sum(1 for e in database["conferences"] if e["acceptance_rates"])
+    with_dblp = sum(1 for e in database["conferences"] if e["dblp_url"])
     print(
         f"Wrote {database['count']} conferences to {OUTPUT_JSON} "
         f"({counts['verified']} verified, {counts['community']} community-sourced, "
-        f"{counts['unknown']} without a known deadline)"
+        f"{counts['unknown']} without a known deadline; "
+        f"{with_rates} with acceptance-rate data, {with_dblp} with a DBLP link)"
     )
 
 

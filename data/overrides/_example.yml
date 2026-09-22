@@ -15,3 +15,9 @@ timezone: "AoE"             # e.g. AoE (Anywhere on Earth), UTC, CEST, ...
 cfp_url: "https://aaai.org/conference/aaai/aaai-27/"
 notes: "Abstract deadline 2026-08-08, full paper 2026-08-15"
 verified_by: "your-github-username"
+
+# All optional - fill in only what you know. These are independent of the deadline
+# above (e.g. you can add a publisher without touching the deadline fields).
+# place: "Vancouver, Canada"                        # free text, "Virtual" or "Hybrid - <city>" works too
+# publisher: "IEEE"                                 # e.g. IEEE / ACM / Springer LNCS
+# open_access: true                                 # true/false, only if you're sure

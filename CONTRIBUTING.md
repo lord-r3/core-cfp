@@ -24,6 +24,10 @@ pull request rather than an issue — it's usually a single small file.
    rebuilds automatically) and takes precedence over any auto-detected guess for that
    conference.
 
+You can also add `place`, `publisher`, and `open_access` (see the commented-out fields
+in `_example.yml`) independently of the deadline fields above - e.g. to add a publisher
+without knowing the current CFP deadline.
+
 ## Ambiguous acronyms
 
 A handful of acronyms are shared by more than one CORE-ranked conference in different

@@ -10,8 +10,29 @@ const state = {
   region: "",
   format: "",
   hideUnknown: false,
+  starredOnly: false,
+  starred: new Set(),
   sortBy: "deadline",
 };
+
+const STARRED_STORAGE_KEY = "core-cfp:starred";
+
+function loadStarred() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(STARRED_STORAGE_KEY) || "[]"));
+  } catch (err) {
+    console.error(err);
+    return new Set(); // private browsing / blocked storage - degrade to no watchlist
+  }
+}
+
+function saveStarred() {
+  try {
+    localStorage.setItem(STARRED_STORAGE_KEY, JSON.stringify([...state.starred]));
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 const els = {};
 
@@ -49,6 +70,36 @@ function formatDeadline(entry) {
     if (days <= 14) countdownClass = "due-soon";
   }
   return { dateLabel, countdownLabel, countdownClass };
+}
+
+// ponytail: fixed-offset zones only (AoE/UTC±N/PT-as-UTC-8), no DST/IANA support -
+// ceiling: a source using a named zone (or PT during its actual DST transition) is off
+// by up to an hour; falls back to no local-time line rather than showing a wrong one.
+// Upgrade path: extend this map, or adopt the Temporal API once broadly supported, if
+// real data ever needs it. Covers 69/71 of today's community-sourced entries as-is.
+const FIXED_OFFSET_MINUTES = { AOE: -720, PT: -480, UTC: 0 };
+
+function resolveOffsetMinutes(timezone) {
+  const key = (timezone || "AoE").trim().toUpperCase();
+  if (key in FIXED_OFFSET_MINUTES) return FIXED_OFFSET_MINUTES[key];
+  const match = key.match(/^UTC([+-]\d{1,2})$/);
+  return match ? parseInt(match[1], 10) * 60 : null;
+}
+
+function localDeadlineInfo(entry) {
+  if (!entry.deadline) return null;
+  const offsetMinutes = resolveOffsetMinutes(entry.timezone);
+  if (offsetMinutes === null) return null;
+  const [year, month, day] = entry.deadline.split("-").map(Number);
+  // 23:59:59 in the source's fixed-offset zone, converted to a UTC instant.
+  const utcMs = Date.UTC(year, month - 1, day, 23, 59, 59) - offsetMinutes * 60000;
+  const localDate = new Date(utcMs);
+  const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const formatted = localDate.toLocaleString("en-US", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  });
+  return `${formatted} (${zone})`;
 }
 
 function statusBadge(entry) {
@@ -133,6 +184,24 @@ function downloadIcs(filename, text) {
   URL.revokeObjectURL(url);
 }
 
+function workshopsBlock(entry) {
+  const workshops = entry.workshops || [];
+  if (workshops.length === 0) return "";
+  const items = workshops
+    .map((w) => {
+      const link = w.cfp_url
+        ? `<a href="${w.cfp_url}" target="_blank" rel="noopener">${w.name}</a>`
+        : w.name;
+      return `<li>${link}${w.deadline ? ` — ${w.deadline}` : ""}</li>`;
+    })
+    .join("");
+  return `
+    <details class="conf-workshops">
+      <summary>${workshops.length} co-located workshop${workshops.length === 1 ? "" : "s"}</summary>
+      <ul>${items}</ul>
+    </details>`;
+}
+
 function renderCard(entry) {
   const { dateLabel, countdownLabel, countdownClass } = formatDeadline(entry);
   const forChips = (entry.field_of_research || [])
@@ -151,11 +220,15 @@ function renderCard(entry) {
   const eventInfo = [entry.event_date, entry.place, formatLabel].filter(Boolean).join(" · ");
   const note = entry.notes ? `<div class="conf-note">${entry.notes}</div>` : "";
   const acceptRate = acceptanceRateLine(entry);
+  const localTime = localDeadlineInfo(entry);
+  const starred = state.starred.has(entry.id);
+  const starButton = `<button type="button" class="star-toggle ${starred ? "starred" : ""}" data-star-id="${entry.id}" aria-label="${starred ? "Remove from watchlist" : "Add to watchlist"}" aria-pressed="${starred}">${starred ? "★" : "☆"}</button>`;
 
   return `
     <li class="conf-card">
       <div class="conf-main">
         <div class="conf-title-row">
+          ${starButton}
           <span class="conf-acronym">${entry.acronym}</span>
           <span class="badge ${rankClass(entry.rank)}">${entry.rank}</span>
           <span class="conf-title">${entry.title}</span>
@@ -170,10 +243,12 @@ function renderCard(entry) {
           ${acceptRate}
         </div>
         ${note}
+        ${workshopsBlock(entry)}
       </div>
       <div class="conf-deadline">
         <span class="deadline-date">${dateLabel}</span>
         <span class="deadline-countdown ${countdownClass}">${countdownLabel}</span>
+        ${localTime ? `<span class="deadline-local">Your time: ${localTime}</span>` : ""}
       </div>
     </li>`;
 }
@@ -199,6 +274,9 @@ function applyFilters() {
   }
   if (state.hideUnknown) {
     items = items.filter((e) => e.deadline);
+  }
+  if (state.starredOnly) {
+    items = items.filter((e) => state.starred.has(e.id));
   }
 
   items = [...items];
@@ -289,19 +367,24 @@ async function init() {
   els.regionFilter = document.getElementById("region-filter");
   els.formatFilter = document.getElementById("format-filter");
   els.hideUnknown = document.getElementById("hide-unknown");
+  els.starredOnly = document.getElementById("starred-only");
   els.sortBy = document.getElementById("sort-by");
   els.generatedAt = document.getElementById("generated-at");
   els.repoLink = document.getElementById("repo-link");
   els.contributeLink = document.getElementById("contribute-link");
   els.copyLink = document.getElementById("copy-link");
   els.exportIcs = document.getElementById("export-ics");
+  els.subscribeLink = document.getElementById("subscribe-link");
 
   if (GITHUB_REPO !== "OWNER/REPO") {
     els.repoLink.href = `https://github.com/${GITHUB_REPO}`;
     els.contributeLink.href = `https://github.com/${GITHUB_REPO}/blob/main/CONTRIBUTING.md`;
   }
+  const feedUrl = new URL("data/all.ics", location.href);
+  els.subscribeLink.href = `webcal://${feedUrl.host}${feedUrl.pathname}`;
 
   restoreStateFromUrl();
+  state.starred = loadStarred();
   els.search.value = state.search;
   document.querySelectorAll(".rank-toggle").forEach((cb) => {
     cb.checked = state.ranks.has(cb.value);
@@ -337,6 +420,10 @@ async function init() {
     state.hideUnknown = e.target.checked;
     onFilterChange();
   });
+  els.starredOnly.addEventListener("change", (e) => {
+    state.starredOnly = e.target.checked;
+    render();
+  });
   els.sortBy.addEventListener("change", (e) => {
     state.sortBy = e.target.value;
     onFilterChange();
@@ -357,10 +444,20 @@ async function init() {
     downloadIcs("core-cfp-selection.ics", buildIcs(applyFilters()));
   });
   els.list.addEventListener("click", (e) => {
-    const button = e.target.closest("[data-ics-id]");
-    if (!button) return;
-    const entry = state.conferences.find((c) => String(c.id) === button.dataset.icsId);
-    if (entry) downloadIcs(`${entry.acronym}.ics`, buildIcs([entry]));
+    const icsButton = e.target.closest("[data-ics-id]");
+    if (icsButton) {
+      const entry = state.conferences.find((c) => String(c.id) === icsButton.dataset.icsId);
+      if (entry) downloadIcs(`${entry.acronym}.ics`, buildIcs([entry]));
+      return;
+    }
+    const starButton = e.target.closest("[data-star-id]");
+    if (starButton) {
+      const id = Number(starButton.dataset.starId);
+      if (state.starred.has(id)) state.starred.delete(id);
+      else state.starred.add(id);
+      saveStarred();
+      render();
+    }
   });
 
   try {

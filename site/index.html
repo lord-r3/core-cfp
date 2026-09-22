@@ -49,6 +49,11 @@
       Only conferences with a known deadline
     </label>
 
+    <label class="hide-unknown">
+      <input type="checkbox" id="starred-only" />
+      ★ Starred only
+    </label>
+
     <select id="sort-by" aria-label="Sort order">
       <option value="deadline">Sort: nearest deadline</option>
       <option value="rank">Sort: rank</option>
@@ -59,6 +64,7 @@
   <section class="actions" aria-label="Actions">
     <button id="copy-link" type="button">Copy link to this view</button>
     <button id="export-ics" type="button">Export selection (.ics)</button>
+    <a id="subscribe-link" href="data/all.ics">Subscribe to all deadlines (webcal)</a>
   </section>
 
   <p class="legend">

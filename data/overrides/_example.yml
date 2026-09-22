@@ -21,3 +21,11 @@ verified_by: "your-github-username"
 # place: "Vancouver, Canada"                        # free text, "Virtual" or "Hybrid - <city>" works too
 # publisher: "IEEE"                                 # e.g. IEEE / ACM / Springer LNCS
 # open_access: true                                 # true/false, only if you're sure
+
+# Co-located workshops, if any - each needs at least a name. CORE doesn't rank
+# workshops separately, so this only ever comes from a manual override, never
+# from the automated importers.
+# workshops:
+#   - name: "AAAI Workshop on X"
+#     deadline: "2026-07-01"
+#     cfp_url: "https://example.org/workshop-x"

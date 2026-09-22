@@ -1,0 +1,23 @@
+# Copy this file to <acronym>.yml (e.g. aaai.yml) and fill in a real, verified
+# deadline. See CONTRIBUTING.md for the full workflow.
+#
+# Files starting with "_" are ignored by the build, so this example is never
+# picked up as real data.
+
+# CORE numeric id - only required if the acronym below is ambiguous (the build
+# will print a warning telling you if it is). Look it up in data/core_rankings.csv.
+id: 2335
+
+acronym: CHIIR
+year: 2027
+deadline: "2026-10-15"      # ISO date (YYYY-MM-DD) or full timestamp
+timezone: "AoE"             # e.g. AoE (Anywhere on Earth), UTC, CEST, ...
+cfp_url: "https://chiir2027.github.io/full-papers.html"
+notes: "Abstract deadline 2026-10-08, full paper 2026-10-15"
+verified_by: "lord-r3"
+
+# All optional - fill in only what you know. These are independent of the deadline
+# above (e.g. you can add a publisher without touching the deadline fields).
+place: "Berlin, Germany"                        # free text, "Virtual" or "Hybrid - <city>" works too
+publisher: "ACM"                                 # e.g. IEEE / ACM / Springer LNCS
+open_access: true                                 # true/false, only if you're sure

@@ -90,4 +90,20 @@ for e in entries:
 assert entries[0] == {"year": 2024, "accepted": 20, "submitted": 100, "rate": 20.0}
 assert entries[1]["rate"] == 10.0
 
+# --- build_database.escape_ics / ics_event: RFC5545 escaping + all-day VEVENT shape ---
+assert build_database.escape_ics("a, b; c\nd") == "a\\, b\\; c\\nd"
+ics_row = {
+    "id": 1,
+    "acronym": "X",
+    "title": "Test, Inc.",
+    "notes": None,
+    "cfp_url": "https://example.org",
+    "deadline": "2026-01-01",
+}
+event = build_database.ics_event(ics_row)
+assert "DTSTART;VALUE=DATE:20260101" in event
+assert "DTEND;VALUE=DATE:20260102" in event  # exclusive end, one day after the deadline
+assert "SUMMARY:X CFP deadline" in event
+assert "DESCRIPTION:Test\\, Inc. - https://example.org" in event
+
 print("OK - all self-checks passed")

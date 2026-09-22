@@ -2,11 +2,10 @@
 
 CORE CFP is an idea I wanted to implement for quite some time. I often times ask myself to which conference should I submit work on XY to. Then I check core, then I manually check CFP availabiltiy etc, looking for various conferences on various platforms, using Google, dark arts and what not to get to the next deadline that fits the strength of my contribution in a specific Field of Research.
 
-While I love to use [sec-deadlines](https://sec-deadlines.github.io/) and others, I always missed a direct integration of [CORE](https://www.core.edu.au/)-ranked (A*/A/B) computer science conferences directly into the CfP overview.
+While I regularly use [sec-deadlines](https://sec-deadlines.github.io/) and others, I always missed a direct integration of [CORE](https://www.core.edu.au/)-ranked (A*/A/B) computer science conferences directly into the CfP overview. The "deadlines" pages do not all have the same amount of features that I wanted. E.g., I cannot share a certain state of conferences that might be targeted using some filters.
 
-**Live idea, not a live API.** There is no official, machine-readable source of CFP
-deadlines anywhere — CORE only publishes rankings, not deadlines. This project combines
-three layers, each one only filling gaps the previous layer left (see `merge()` in
+## How it works
+There is no official, machine-readable source of CFP deadlines anywhere (at least to my knowledge). CORE only publishes rankings, not deadlines or additional information except for how the ranking was created. This project combines three layers of information, each one only filling gaps the previous layer left (see `merge()` in
 [`scripts/build_database.py`](scripts/build_database.py)):
 
 1. **CORE rankings** ([`data/core_rankings.csv`](data/core_rankings.csv)) — the official
@@ -26,11 +25,13 @@ three layers, each one only filling gaps the previous layer left (see `merge()` 
      [se-deadlines](https://github.com/se-deadlines/se-deadlines.github.io),
      [usec-deadlines](https://github.com/usec-deadlines/usec-deadlines.github.io),
      [hci-deadlines](https://github.com/hci-deadlines/hci-deadlines.github.io),
+     [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io) and
+     [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines) —
      [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io),
      [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines),
      [yeah-tiger](https://github.com/yeah-tiger/yeah-tiger.github.io) (PL conferences) and
      [hcorinna/fair-deadlines](https://github.com/hcorinna/fair-deadlines) —
-     forks of the same original Jekyll template, one per research area. fair-deadlines
+     forks of the same original Jekyll template, one per research area.fair-deadlines
      also lists journal special issues alongside conferences; only entries tagged
      `cat: conference` are imported.
 
@@ -43,12 +44,15 @@ three layers, each one only filling gaps the previous layer left (see `merge()` 
 `site/data/conferences.json`, which the plain HTML/CSS/JS frontend in [`site/`](site/) reads
 client-side.
 
+
+## Contribute
 Know another well-maintained "X-deadlines" style tracker that covers CORE-ranked
 conferences? Add it to `CONFERENCE_DEADLINES_FAMILY` in `scripts/import_external.py` (or
 open an issue).
 
-On top of the deadline itself, each conference also carries supplementary data that's
-looked up independently of the deadline tiers above (a conference can have this even
+## Features
+On top of the deadline itself, each conference also carries metadata that's
+looked up independently of the deadlines above (a conference can also have this even
 without a known deadline):
 
 - **Historical acceptance rates** ([`data/acceptance_rates.json`](data/acceptance_rates.json),
@@ -57,27 +61,34 @@ without a known deadline):
   actively-maintained CSV of accepted/submitted counts per year.
 - **DBLP link** — captured from the `dblp` field already present in the ccf-deadlines /
   sec-deadlines-family data. We link to DBLP's own venue page rather than asserting a
-  publisher or open-access status ourselves; those are optional manual override fields
-  instead (see CONTRIBUTING.md).
+  publisher or open-access status ourselves.
 - **Region / format (virtual or hybrid)** — best-effort, derived from the free-text
   `place` field (community-sourced, or manually added via an override) by
   `derive_region`/`derive_format` in `scripts/common.py`. Coverage is limited to
-  conferences with a known `place`.
-
-## Features
+  conferences with a known `place`. If you want to add a place, open an issue.
+- **Co-located workshops** — an optional `workshops` list on a verified override
+  (see CONTRIBUTING.md). Manual-only: CORE doesn't rank workshops separately, and none
+  of the imported trackers model a parent-conference/child-workshop relationship.
 
 - Filter by rank, field of research, region, format, and free-text search; sort by
   nearest deadline, rank, or acronym.
 - **Copy link to this view** — the current filter state lives in the URL, so a shared
   link reproduces the same filtered view for a co-author.
 - **Export selection (.ics)** — download the currently filtered conferences (or a single
-  one from its card) as calendar events.
+  one from its card) as calendar events; **Subscribe (webcal)** points a calendar app at
+  `site/data/all.ics` (generated by `build_database.py`) for *all* known deadlines, kept
+  up to date automatically as the app re-polls it.
+- **Your local time** — deadlines are shown converted to the viewer's own timezone
+  (fixed-offset zones only - AoE/UTC±N/PT; see the ponytail note in `site/app.js`'s
+  `localDeadlineInfo` for the exact scope).
+- **★ Watchlist** — star conferences to build a personal shortlist, filterable via
+  "Starred only." Stored in the browser's `localStorage`, per-device, no account needed.
 
 ## Scope
 
 Only conferences ranked **A\***, **A**, or **B** in the current CORE ranking round are
 included (~420 of the ~1000 entries in the full CORE list) — C-ranked and unranked entries,
-and non-CS national/regional rankings, are left out to keep the list curatable. Change
+and non-CS national/regional rankings, are left out to keep the list curatable. Fork the repo, change
 `INCLUDED_RANKS` in [`scripts/common.py`](scripts/common.py) if you want a different cut.
 
 ## Disclaimer

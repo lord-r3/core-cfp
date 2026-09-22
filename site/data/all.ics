@@ -1,0 +1,644 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//core-cfp//deadlines//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:907-2026-09-24@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:ACNS CFP deadline
+DESCRIPTION:International Conference on Applied Cryptography and Network Security - https://acns2027.isg.rhul.ac.uk/
+URL:https://acns2027.isg.rhul.ac.uk/
+END:VEVENT
+BEGIN:VEVENT
+UID:525-2026-09-24@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:EuroSys CFP deadline
+DESCRIPTION:Eurosys Conference - https://2027.eurosys.org/
+URL:https://2027.eurosys.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:533-2026-09-24@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:FC CFP deadline
+DESCRIPTION:Financial Cryptography and Data Security Conference - https://fc27.ifca.ai/
+URL:https://fc27.ifca.ai/
+END:VEVENT
+BEGIN:VEVENT
+UID:2273-2026-09-25@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:ICLR CFP deadline
+DESCRIPTION:International Conference on Learning Representations - https://iclr.cc/Conferences/2027
+URL:https://iclr.cc/Conferences/2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2280-2026-09-25@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:SANER CFP deadline
+DESCRIPTION:IEEE International Conference on Software Analysis\, Evolution and Reengineering - https://conf.researchr.org/home/saner-2027
+URL:https://conf.researchr.org/home/saner-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2319-2026-10-01@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:FPGA CFP deadline
+DESCRIPTION:ACM Int'l Symposium on Field Programmable Gate Arrays - https://www.isfpga.org/
+URL:https://www.isfpga.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1261-2026-10-01@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:VLDB CFP deadline
+DESCRIPTION:International Conference on Very Large Databases - https://www.vldb.org/2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:408-2026-10-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:DCC CFP deadline
+DESCRIPTION:Data Compression Conference - https://datacompressionconference.org/
+URL:https://datacompressionconference.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:483-2026-10-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:ECIR CFP deadline
+DESCRIPTION:European Conference on Information Retrieval - https://ecir2027.co.uk/
+URL:https://ecir2027.co.uk/
+END:VEVENT
+BEGIN:VEVENT
+UID:52-2026-10-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:FSE CFP deadline
+DESCRIPTION:ACM International Conference on the Foundations of Software Engineering (was ESEC/FSE\, changed 2024\; duplicate previously listed as ESEC\, removed from DB) - https://conf.researchr.org/home/fse-2027
+URL:https://conf.researchr.org/home/fse-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:138-2026-10-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:SAC CFP deadline
+DESCRIPTION:Selected Areas in Cryptography - https://www.sigapp.org/sac/sac2027
+URL:https://www.sigapp.org/sac/sac2027
+END:VEVENT
+BEGIN:VEVENT
+UID:760-2026-10-05@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:WCNC CFP deadline
+DESCRIPTION:IEEE Wireless Communications and Networking Conference - https://wcnc2027.ieee-wcnc.org/
+URL:https://wcnc2027.ieee-wcnc.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:913-2026-10-06@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:AISTATS CFP deadline
+DESCRIPTION:International Conference on Artificial Intelligence and Statistics - https://virtual.aistats.org/Conferences/2027
+URL:https://virtual.aistats.org/Conferences/2027
+END:VEVENT
+BEGIN:VEVENT
+UID:528-2026-10-07@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:EDBT CFP deadline
+DESCRIPTION:Extending Database Technology - https://edbticdt2027.github.io/
+URL:https://edbticdt2027.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:688-2026-10-08@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:IPDPS CFP deadline
+DESCRIPTION:IEEE International Parallel and Distributed Processing Symposium (was IPPS and SPDP) - https://www.ipdps.org/
+URL:https://www.ipdps.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:922-2026-10-09@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:AAMAS CFP deadline
+DESCRIPTION:International Joint Conference on Autonomous Agents and Multiagent Systems (previously the International Conference on Multiagent Systems\, ICMAS\, changed in 2000) - https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+URL:https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:39-2026-10-09@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:SIGMETRICS CFP deadline
+DESCRIPTION:Measurement and Modeling of Computer Systems - https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:106-2026-10-12@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:ALT CFP deadline
+DESCRIPTION:Algorithmic Learning Theory - https://algorithmiclearningtheory.org/alt2027/
+URL:https://algorithmiclearningtheory.org/alt2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:949-2026-10-12@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:COLING CFP deadline
+DESCRIPTION:International Conference on Computational Linguistics - https://2027.coling-iccl.org/
+URL:https://2027.coling-iccl.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1648-2026-10-12@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:NAACL CFP deadline
+DESCRIPTION:North American Association for Computational Linguistics - https://2027.naacl.org/
+URL:https://2027.naacl.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:18-2026-10-14@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:OOPSLA CFP deadline
+DESCRIPTION:ACM Conference on Object Oriented Programming Systems Languages and Applications - https://2027.splashcon.org/track/splashoopsla2027
+URL:https://2027.splashcon.org/track/splashoopsla2027
+END:VEVENT
+BEGIN:VEVENT
+UID:1894-2026-10-15@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:CHES CFP deadline
+DESCRIPTION:Workshop on Cryptographic Hardware and Embedded Systems - https://ches.iacr.org/2027/
+URL:https://ches.iacr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:2335-2026-10-15@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:CHIIR CFP deadline
+DESCRIPTION:ACM SIGIR Conference on Human Information Interaction And Retrieval - Abstract deadline 2026-10-08\, full paper 2026-10-15 - https://chiir2027.github.io/full-papers.html
+URL:https://chiir2027.github.io/full-papers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:599-2026-10-15@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:CSF CFP deadline
+DESCRIPTION:IEEE Computer Security Foundations Symposium (was CSFW) - https://www.ieee-security.org/TC/CSF2027/
+URL:https://www.ieee-security.org/TC/CSF2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:514-2026-10-15@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:ESOP CFP deadline
+DESCRIPTION:European Symposium on Programming - https://etaps.org/2027/conferences/esop/
+URL:https://etaps.org/2027/conferences/esop/
+END:VEVENT
+BEGIN:VEVENT
+UID:629-2026-10-16@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:FG CFP deadline
+DESCRIPTION:IEEE International Conference on Automatic Face and Gesture Recognition - https://fg2027.ieee-biometrics.org/
+URL:https://fg2027.ieee-biometrics.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:56-2026-10-17@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:SIGMOD CFP deadline
+DESCRIPTION:ACM Special Interest Group on Management of Data Conference - https://2027.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2281-2026-10-21@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:SEAMS CFP deadline
+DESCRIPTION:International Symposium on Software Engineering for Adaptive and Self-Managing Systems - https://conf.researchr.org/track/seams-2027/seams-2027-research-track
+URL:https://conf.researchr.org/track/seams-2027/seams-2027-research-track
+END:VEVENT
+BEGIN:VEVENT
+UID:1710-2026-10-22@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:CT-RSA CFP deadline
+DESCRIPTION:Cryptographers Track at RSA Conference - https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/
+URL:https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:2348-2026-10-23@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:CHASE CFP deadline
+DESCRIPTION:International Conference on Cooperative and Human Aspects of Software Engineering - https://conf.researchr.org/track/chase-2027/chase-2027-papers
+URL:https://conf.researchr.org/track/chase-2027/chase-2027-papers
+END:VEVENT
+BEGIN:VEVENT
+UID:711-2026-10-23@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:MSR CFP deadline
+DESCRIPTION:IEEE International Working Conference on Mining Software Repositories - https://conf.researchr.org/track/msr-2027/msr-2027-technical-papers
+URL:https://conf.researchr.org/track/msr-2027/msr-2027-technical-papers
+END:VEVENT
+BEGIN:VEVENT
+UID:1548-2026-10-25@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:WWW CFP deadline
+DESCRIPTION:International World Wide Web Conference - https://www2027.thewebconf.org/
+URL:https://www2027.thewebconf.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2288-2026-10-26@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:TechDebt CFP deadline
+DESCRIPTION:International Conference on Technical Debt - https://conf.researchr.org/track/TechDebt-2027/TechDebt-2027-main
+URL:https://conf.researchr.org/track/TechDebt-2027/TechDebt-2027-main
+END:VEVENT
+BEGIN:VEVENT
+UID:2337-2026-10-30@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:CAIN CFP deadline
+DESCRIPTION:International Conference on AI Engineering – Software Engineering for AI - https://conf.researchr.org/track/cain-2027/cain-2027-call-for-papers
+URL:https://conf.researchr.org/track/cain-2027/cain-2027-call-for-papers
+END:VEVENT
+BEGIN:VEVENT
+UID:481-2026-11-01@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:EUROGP CFP deadline
+DESCRIPTION:European Conference on Genetic Programming - https://www.evostar.org/2027/eurogp/
+URL:https://www.evostar.org/2027/eurogp/
+END:VEVENT
+BEGIN:VEVENT
+UID:2218-2026-11-01@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:EvoApplications CFP deadline
+DESCRIPTION:International Conference on Applications of Evolutionary Computation - https://www.evostar.org/2027/evoapps/
+URL:https://www.evostar.org/2027/evoapps/
+END:VEVENT
+BEGIN:VEVENT
+UID:2195-2026-11-01@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:EvoCOP CFP deadline
+DESCRIPTION:European Conference on Evolutionary Computation in Combinatorial Optimisation - https://www.evostar.org/2027/evocop/
+URL:https://www.evostar.org/2027/evocop/
+END:VEVENT
+BEGIN:VEVENT
+UID:65-2026-11-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:STOC CFP deadline
+DESCRIPTION:ACM Symposium on Theory of Computing - https://acm-stoc.org/stoc2027/
+URL:https://acm-stoc.org/stoc2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:1181-2026-11-05@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:ICPC CFP deadline
+DESCRIPTION:IEEE International Conference on Program Comprehension (previously IWPC\, changed in 2006) - https://conf.researchr.org/track/icpc-2027/icpc-2027-research-track
+URL:https://conf.researchr.org/track/icpc-2027/icpc-2027-research-track
+END:VEVENT
+BEGIN:VEVENT
+UID:725-2026-11-05@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:RTAS CFP deadline
+DESCRIPTION:IEEE Real-Time and Embedded Technology and Applications Symposium - https://2027.rtas.org/
+URL:https://2027.rtas.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:986-2026-11-11@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:ICDE CFP deadline
+DESCRIPTION:International Conference on Data Engineering - https://icde2027.github.io/
+URL:https://icde2027.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:84-2026-11-12@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:PLDI CFP deadline
+DESCRIPTION:ACM-SIGPLAN Conference on Programming Language Design and Implementation - https://pldi27.sigplan.org/
+URL:https://pldi27.sigplan.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1521-2026-11-12@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:REFSQ CFP deadline
+DESCRIPTION:International Workshop on Requirements Engineering: Foundation for Software Quality - https://2027.refsq.org/
+URL:https://2027.refsq.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:604-2026-11-16@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:CVPR CFP deadline
+DESCRIPTION:IEEE Conference on Computer Vision and Pattern Recognition - Confirmed on the official cvpr.thecvf.com Dates page on 2026-09-22. Conference itself runs June 22-25\, 2027.\n - https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+URL:https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+END:VEVENT
+BEGIN:VEVENT
+UID:750-2026-11-17@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:SP CFP deadline
+DESCRIPTION:IEEE Symposium on Security and Privacy - IEEE Symposium on Security and Privacy 2027\, Cycle 2 submission deadline (Cycle 1\, June 11 2026\, has already passed). Confirmed on the official sp2027.ieee-security.org call-for-papers page on 2026-09-22.\n - https://sp2027.ieee-security.org/cfpapers.html
+URL:https://sp2027.ieee-security.org/cfpapers.html
+END:VEVENT
+BEGIN:VEVENT
+UID:31-2026-11-17@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:WSDM CFP deadline
+DESCRIPTION:ACM International Conference on Web Search and Data Mining - https://wsdm-conference.org/2027/
+URL:https://wsdm-conference.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:1996-2026-11-18@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:DAC CFP deadline
+DESCRIPTION:Design Automation Conf - https://dac.com/2027/authors/call-for-contributions
+URL:https://dac.com/2027/authors/call-for-contributions
+END:VEVENT
+BEGIN:VEVENT
+UID:488-2026-11-19@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:ECOOP CFP deadline
+DESCRIPTION:European Conference on Object-Oriented Programming - https://2027.ecoop.org
+URL:https://2027.ecoop.org
+END:VEVENT
+BEGIN:VEVENT
+UID:988-2026-11-25@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:DASFAA CFP deadline
+DESCRIPTION:International Conference on Database Systems for Advanced Applications - https://dasfaa2027.github.io/
+URL:https://dasfaa2027.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:1442-2026-11-30@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:PETS CFP deadline
+DESCRIPTION:Privacy Enhancing Technologies Symposium (was International Workshop of Privacy Enhancing Technologies) - https://petsymposium.org/cfp27.php
+URL:https://petsymposium.org/cfp27.php
+END:VEVENT
+BEGIN:VEVENT
+UID:610-2026-11-30@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:SECON CFP deadline
+DESCRIPTION:IEEE International Conference on Sensing\, Communication and Networking - https://secon2027.ieee-secon.org/
+URL:https://secon2027.ieee-secon.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:695-2026-12-01@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:CCGRID CFP deadline
+DESCRIPTION:IEEE International Symposium on Cluster\, Cloud and Grid Computing - https://hpcclab.org/ccgrid27/
+URL:https://hpcclab.org/ccgrid27/
+END:VEVENT
+BEGIN:VEVENT
+UID:787-2026-12-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:DSN CFP deadline
+DESCRIPTION:IEEE/IFIP International Conference on Dependable Systems and Networks - https://dsn2027-berlin.github.io/
+URL:https://dsn2027-berlin.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:2185-2026-12-02@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:EuroS&P CFP deadline
+DESCRIPTION:IEEE European Symposium on Security and Privacy - https://eurosp2027.ieee-security.org/
+URL:https://eurosp2027.ieee-security.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1842-2026-12-08@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:OSDI CFP deadline
+DESCRIPTION:Usenix Symposium on Operating Systems Design and Implementation - https://www.usenix.org/conference/osdi27
+URL:https://www.usenix.org/conference/osdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:46-2026-12-10@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:PODS CFP deadline
+DESCRIPTION:ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems - https://2027.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:61-2026-12-11@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:AsiaCCS CFP deadline
+DESCRIPTION:Asia Conference on Information\, Computer and Communications Security - https://asiaccs2027.cityu.edu.mo/index.html
+URL:https://asiaccs2027.cityu.edu.mo/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:196-2027-01-05@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:ACL CFP deadline
+DESCRIPTION:Association for Computational Linguistics - https://2027.aclweb.org/
+URL:https://2027.aclweb.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1412-2027-01-11@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:ISSTA CFP deadline
+DESCRIPTION:International Symposium on Software Testing and Analysis - https://conf.researchr.org/home/issta-2027
+URL:https://conf.researchr.org/home/issta-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2169-2027-01-15@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:ICWSM CFP deadline
+DESCRIPTION:International Conference on Web and Social Media - https://www.icwsm.org/2027/
+URL:https://www.icwsm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:422-2027-01-18@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:DIS CFP deadline
+DESCRIPTION:Designing Interactive Systems - https://dis.acm.org/2027/
+URL:https://dis.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:331-2027-01-20@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:CAV CFP deadline
+DESCRIPTION:Computer Aided Verification - https://conferences.i-cav.org/2027/
+URL:https://conferences.i-cav.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:29-2027-01-21@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:SIGIR CFP deadline
+DESCRIPTION:ACM International Conference on Research and Development in Information Retrieval - https://sigir2027.org/
+URL:https://sigir2027.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1841-2027-01-26@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:USENIX-Security CFP deadline
+DESCRIPTION:Usenix Security Symposium - Cycle 2 submission deadline (Cycle 1\, Aug 25 2026\, has already passed). Confirmed on the official USENIX call-for-papers page on 2026-09-22.\n - https://www.usenix.org/conference/usenixsecurity27/call-for-papers
+URL:https://www.usenix.org/conference/usenixsecurity27/call-for-papers
+END:VEVENT
+BEGIN:VEVENT
+UID:44-2027-01-31@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:ICMR CFP deadline
+DESCRIPTION:International Conference on Multimedia Retrieval (previously MIR) - https://www.icmr2027.org/
+URL:https://www.icmr2027.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:685-2027-01-31@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:IJCNN CFP deadline
+DESCRIPTION:IEEE International Joint Conference on Neural Networks - https://ijcnn.org/2027
+URL:https://ijcnn.org/2027
+END:VEVENT
+BEGIN:VEVENT
+UID:26-2027-02-08@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:KDD CFP deadline
+DESCRIPTION:ACM International Conference on Knowledge Discovery and Data Mining - https://kdd2027.kdd.org/
+URL:https://kdd2027.kdd.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:1037-2027-02-25@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:ICFP CFP deadline
+DESCRIPTION:International Conference on Functional Programming - https://icfp27.sigplan.org
+URL:https://icfp27.sigplan.org
+END:VEVENT
+BEGIN:VEVENT
+UID:491-2027-03-15@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:ECML PKDD CFP deadline
+DESCRIPTION:European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database (PKDD and ECML combined from 2008) - https://ecmlpkdd.org/2027/
+URL:https://ecmlpkdd.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:28-2027-04-20@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:RecSys CFP deadline
+DESCRIPTION:ACM International Conference on Recommender Systems - https://recsys.acm.org/recsys27/
+URL:https://recsys.acm.org/recsys27/
+END:VEVENT
+BEGIN:VEVENT
+UID:13-2027-08-26@core-cfp
+DTSTAMP:20260922T182757Z
+DTSTART;VALUE=DATE:20270826
+DTEND;VALUE=DATE:20270827
+SUMMARY:CSCW CFP deadline
+DESCRIPTION:ACM Conference on Computer Supported Cooperative Work - https://cscw.acm.org/rolling.html
+URL:https://cscw.acm.org/rolling.html
+END:VEVENT
+END:VCALENDAR

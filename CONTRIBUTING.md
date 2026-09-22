@@ -28,6 +28,11 @@ You can also add `place`, `publisher`, and `open_access` (see the commented-out 
 in `_example.yml`) independently of the deadline fields above - e.g. to add a publisher
 without knowing the current CFP deadline.
 
+Co-located workshops (their own, often earlier, deadlines) can go in a `workshops` list
+on the same override - see `_example.yml`. There's no automated source for these (CORE
+doesn't rank workshops separately), so this is manual-only and coverage will be sparse
+until contributed.
+
 ## Ambiguous acronyms
 
 A handful of acronyms are shared by more than one CORE-ranked conference in different

@@ -24,10 +24,15 @@ three layers, each one only filling gaps the previous layer left (see `merge()` 
      conveniently ships its own CORE rank per conference, which we use to disambiguate conferences with the same acronym.
    - [sec-deadlines](https://github.com/sec-deadlines/sec-deadlines.github.io),
      [se-deadlines](https://github.com/se-deadlines/se-deadlines.github.io),
+     [usec-deadlines](https://github.com/usec-deadlines/usec-deadlines.github.io),
      [hci-deadlines](https://github.com/hci-deadlines/hci-deadlines.github.io),
-     [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io) and
-     [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines) —
-     forks of the same original Jekyll template, one per research area.
+     [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io),
+     [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines),
+     [yeah-tiger](https://github.com/yeah-tiger/yeah-tiger.github.io) (PL conferences) and
+     [hcorinna/fair-deadlines](https://github.com/hcorinna/fair-deadlines) —
+     forks of the same original Jekyll template, one per research area. fair-deadlines
+     also lists journal special issues alongside conferences; only entries tagged
+     `cat: conference` are imported.
 
    Matching is by normalized acronym against the CORE list: ambiguous or unmatched
    entries are skipped rather than guessed at (see `import_external.py` for the exact

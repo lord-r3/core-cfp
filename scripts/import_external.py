@@ -44,9 +44,12 @@ CCF_DEADLINES_TARBALL = "https://github.com/ccfddl/ccf-deadlines/archive/refs/he
 CONFERENCE_DEADLINES_FAMILY = [
     ("sec-deadlines", "sec-deadlines/sec-deadlines.github.io", "master"),
     ("se-deadlines", "se-deadlines/se-deadlines.github.io", "main"),
+    ("usec-deadlines", "usec-deadlines/usec-deadlines.github.io", "master"),
     ("hci-deadlines", "hci-deadlines/hci-deadlines.github.io", "gh-pages"),
     ("ds-deadlines", "ds-deadlines/ds-deadlines.github.io", "gh-pages"),
     ("ai-deadlines", "paperswithcode/ai-deadlines", "gh-pages"),
+    ("yeah-tiger", "yeah-tiger/yeah-tiger.github.io", "master"),
+    ("fair-deadlines", "hcorinna/fair-deadlines", "gh-pages"),
 ]
 
 DEADLINE_FORMATS = ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M")
@@ -148,11 +151,13 @@ def import_ccf_deadlines(core_index, results):
 
 
 def import_conference_deadlines_family(core_index, results):
-    # Two schema variants share this template family: sec-deadlines uses one
-    # entry per conference with `name` + a list of deadlines across years;
-    # hci/ds/ai-deadlines use one entry per conference-year with `title` +
-    # a single `deadline`. Group by normalized acronym first so both shapes
-    # are handled the same way.
+    # Two schema variants share this template family: sec/se/usec-deadlines use
+    # one entry per conference with `name` (the acronym) + a list of deadlines
+    # across years; hci/ds/ai-deadlines/yeah-tiger/fair-deadlines use one entry
+    # per conference-year with `title` (the acronym) + a single `deadline`.
+    # fair-deadlines also has a `name` field, but there it's the long-form
+    # description, not the acronym - so `title` must be checked first. Group by
+    # normalized acronym first so all shapes are handled the same way.
     for name, repo, branch in CONFERENCE_DEADLINES_FAMILY:
         url = f"https://raw.githubusercontent.com/{repo}/{branch}/_data/conferences.yml"
         print(f"Fetching {name} ({url})...")
@@ -169,7 +174,9 @@ def import_conference_deadlines_family(core_index, results):
 
         groups = {}
         for entry in entries:
-            label = entry.get("name") or entry.get("title") or ""
+            if entry.get("cat", "conference") != "conference":
+                continue  # fair-deadlines also lists journal special issues - not CORE conferences
+            label = entry.get("title") or entry.get("name") or ""
             groups.setdefault(normalize_acronym(label), []).append(entry)
 
         matched = 0

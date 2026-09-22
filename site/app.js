@@ -1,6 +1,6 @@
 // Fill in your GitHub "owner/repo" so the footer link and the one-click
 // "suggest a fix" links point at the right place.
-const GITHUB_REPO = "OWNER/REPO";
+const GITHUB_REPO = "lord-r3/core-cfp";
 
 const state = {
   conferences: [],

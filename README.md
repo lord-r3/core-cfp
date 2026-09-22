@@ -51,30 +51,6 @@ included (~420 of the ~1000 entries in the full CORE list) — C-ranked and unra
 and non-CS national/regional rankings, are left out to keep the list curatable. Change
 `INCLUDED_RANKS` in [`scripts/common.py`](scripts/common.py) if you want a different cut.
 
-## Automation (GitHub Actions)
-
-| Workflow | Schedule | What it does |
-|---|---|---|
-| `refresh-core.yml` | monthly | Re-downloads the CORE CSV, commits it if changed |
-| `import-external.yml` | daily | Re-imports ccf-deadlines + the sec-deadlines family, commits `external_cache.json` if changed |
-| `deploy.yml` | on push to `main` | Runs `build_database.py`, deploys `site/` to GitHub Pages |
-
-## Setup
-
-1. Set `GITHUB_REPO` at the top of [`site/app.js`](site/app.js) to `"your-user/your-repo"`
-   (used for the footer link and the one-click "add a deadline" links).
-2. Enable GitHub Pages for this repo: Settings → Pages → Source: **GitHub Actions**.
-3. Push to `main` — `deploy.yml` builds and publishes the site.
-
-## Local development
-
-```bash
-pip install -r requirements.txt
-python scripts/import_external.py  # optional: refresh data/external_cache.json
-python scripts/build_database.py   # writes site/data/conferences.json
-python -m http.server -d site 8000 # http://localhost:8000
-```
-
 ## Disclaimer
 
 This is an independent community project, not an official CORE resource. Rankings are

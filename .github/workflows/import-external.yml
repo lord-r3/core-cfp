@@ -1,0 +1,33 @@
+name: Import community deadline sources
+
+# Pulls from ccf-deadlines and the sec-deadlines-style trackers (see
+# scripts/import_external.py for the full list). Cheap (a handful of HTTP
+# requests), so this can run daily to pick up their own PR merges quickly.
+on:
+  schedule:
+    - cron: "42 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/import_external.py
+      - run: |
+          if ! git diff --quiet -- data/external_cache.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/external_cache.json
+            git commit -m "Refresh community-sourced deadlines"
+            git push
+          else
+            echo "No changes to external cache."
+          fi

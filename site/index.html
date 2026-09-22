@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CORE CFP Deadlines</title>
+<meta name="description" content="Submission deadlines for CORE-ranked (A*/A/B) computer science conferences." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="page-header">
+  <div class="wrap">
+    <h1>CORE CFP Deadlines</h1>
+    <p class="subtitle">
+      Einreichungsfristen für CORE-gerankte (A*/A/B) Konferenzen der Informatik.
+      Rankings stammen aus dem offiziellen <a href="https://portal.core.edu.au/conf-ranks/" target="_blank" rel="noopener">CORE-Portal</a>.
+      Deadlines sind entweder <strong>direkt verifiziert</strong> oder
+      <strong>aus anderen Community-Trackern übernommen</strong> &mdash; siehe Legende.
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="Filter">
+    <input id="search" type="search" placeholder="Suche nach Akronym oder Titel…" aria-label="Suche" />
+
+    <div class="rank-filters" role="group" aria-label="Rank-Filter">
+      <label><input type="checkbox" class="rank-toggle" value="A*" checked /> A*</label>
+      <label><input type="checkbox" class="rank-toggle" value="A" checked /> A</label>
+      <label><input type="checkbox" class="rank-toggle" value="B" checked /> B</label>
+    </div>
+
+    <label class="hide-unknown">
+      <input type="checkbox" id="hide-unknown" />
+      Nur Konferenzen mit bekannter Deadline
+    </label>
+
+    <select id="sort-by" aria-label="Sortierung">
+      <option value="deadline">Sortieren: nächste Deadline</option>
+      <option value="rank">Sortieren: Rank</option>
+      <option value="alpha">Sortieren: Akronym (A-Z)</option>
+    </select>
+  </section>
+
+  <p class="legend">
+    <span class="badge status-verified">verifiziert</span>
+    <span class="badge status-community">community (Quelle)</span>
+    <span class="badge status-unknown">keine Deadline bekannt</span>
+    &mdash; <a id="contribute-link" href="https://github.com/" target="_blank" rel="noopener">Falsche oder fehlende Deadline? Beitragen →</a>
+  </p>
+
+  <p id="result-count" class="result-count"></p>
+
+  <ul id="conference-list" class="conference-list"></ul>
+  <p id="empty-state" class="empty-state" hidden>Keine Konferenzen gefunden.</p>
+</main>
+
+<footer class="page-footer">
+  <div class="wrap">
+    <p>
+      Community-Projekt, keine offizielle CORE-Ressource. Rankings: CORE (<span id="core-source"></span>).
+      Zuletzt aktualisiert: <span id="generated-at">–</span>.
+      Quellcode auf <a id="repo-link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

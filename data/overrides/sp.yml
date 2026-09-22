@@ -1,0 +1,11 @@
+id: 750
+acronym: SP
+year: 2027
+deadline: "2026-11-17"
+timezone: "AoE"
+cfp_url: "https://sp2027.ieee-security.org/cfpapers.html"
+notes: >
+  IEEE Symposium on Security and Privacy 2027, Cycle 2 submission deadline
+  (Cycle 1, June 11 2026, has already passed). Confirmed on the official
+  sp2027.ieee-security.org call-for-papers page on 2026-09-22.
+verified_by: "web-verified 2026-09-22 (official sp2027.ieee-security.org CFP page)"

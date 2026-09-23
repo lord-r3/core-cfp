@@ -19,21 +19,16 @@ There is no official, machine-readable source of CFP deadlines anywhere (at leas
    [`scripts/import_external.py`](scripts/import_external.py)): These projects are
    actively kept up to date by their own communities via their own pull requests, so
    their data is typically reliable:
-   - [ccfddl/ccf-deadlines](https://github.com/ccfddl/ccf-deadlines) (~360 conferences, and
-     conveniently ships its own CORE rank per conference, which we use to disambiguate conferences with the same acronym.
+   - [ccfddl/ccf-deadlines](https://github.com/ccfddl/ccf-deadlines),
    - [sec-deadlines](https://github.com/sec-deadlines/sec-deadlines.github.io),
-     [se-deadlines](https://github.com/se-deadlines/se-deadlines.github.io),
-     [usec-deadlines](https://github.com/usec-deadlines/usec-deadlines.github.io),
-     [hci-deadlines](https://github.com/hci-deadlines/hci-deadlines.github.io),
-     [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io) and
-     [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines) —
-     [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io),
-     [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines),
-     [yeah-tiger](https://github.com/yeah-tiger/yeah-tiger.github.io) (PL conferences) and
-     [hcorinna/fair-deadlines](https://github.com/hcorinna/fair-deadlines) —
-     forks of the same original Jekyll template, one per research area.fair-deadlines
-     also lists journal special issues alongside conferences; only entries tagged
-     `cat: conference` are imported.
+   -  [se-deadlines](https://github.com/se-deadlines/se-deadlines.github.io),
+   -  [usec-deadlines](https://github.com/usec-deadlines/usec-deadlines.github.io),
+   -  [hci-deadlines](https://github.com/hci-deadlines/hci-deadlines.github.io),
+   -  [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io),
+   -  [ds-deadlines](https://github.com/ds-deadlines/ds-deadlines.github.io),
+   -  [paperswithcode/ai-deadlines](https://github.com/paperswithcode/ai-deadlines),
+   -  [yeah-tiger](https://github.com/yeah-tiger/yeah-tiger.github.io) and
+   -  [hcorinna/fair-deadlines](https://github.com/hcorinna/fair-deadlines)
 
    Matching is by normalized acronym against the CORE list: ambiguous or unmatched
    entries are skipped rather than guessed at (see `import_external.py` for the exact
@@ -49,6 +44,8 @@ client-side.
 Know another well-maintained "X-deadlines" style tracker that covers CORE-ranked
 conferences? Add it to `CONFERENCE_DEADLINES_FAMILY` in `scripts/import_external.py` (or
 open an issue).
+
+Or you follow the instructions in [CONTRIBUTING.md](CONTRIBUTING.md) 
 
 ## Features
 On top of the deadline itself, each conference also carries metadata that's
@@ -67,8 +64,7 @@ without a known deadline):
   `derive_region`/`derive_format` in `scripts/common.py`. Coverage is limited to
   conferences with a known `place`. If you want to add a place, open an issue.
 - **Co-located workshops** — an optional `workshops` list on a verified override
-  (see CONTRIBUTING.md). Manual-only: CORE doesn't rank workshops separately, and none
-  of the imported trackers model a parent-conference/child-workshop relationship.
+  (see CONTRIBUTING.md).
 
 - Filter by rank, field of research, region, format, and free-text search; sort by
   nearest deadline, rank, or acronym.
@@ -95,4 +91,4 @@ and non-CS national/regional rankings, are left out to keep the list curatable. 
 
 This is an independent community project, not an official CORE resource. Rankings are
 CORE's; deadlines are either verified directly against the primary CFP page or imported
-from other community deadline trackers, clearly labelled as such on the site.
+from other community deadline trackers, clearly labeled as such on the site.

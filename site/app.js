@@ -281,11 +281,14 @@ function applyFilters() {
 
   items = [...items];
   if (state.sortBy === "deadline") {
+    // Upcoming first (soonest first), then overdue (most recently missed first, since
+    // those are more likely to still get updated), then no known deadline at all.
+    const bucket = (e) => (!e.deadline ? 2 : daysUntil(e.deadline) < 0 ? 1 : 0);
     items.sort((a, b) => {
-      if (!a.deadline && !b.deadline) return a.acronym.localeCompare(b.acronym);
-      if (!a.deadline) return 1;
-      if (!b.deadline) return -1;
-      return a.deadline.localeCompare(b.deadline);
+      const diff = bucket(a) - bucket(b);
+      if (diff !== 0) return diff;
+      if (!a.deadline) return a.acronym.localeCompare(b.acronym);
+      return bucket(a) === 1 ? b.deadline.localeCompare(a.deadline) : a.deadline.localeCompare(b.deadline);
     });
   } else if (state.sortBy === "rank") {
     items.sort((a, b) => RANK_ORDER[a.rank] - RANK_ORDER[b.rank] || a.acronym.localeCompare(b.acronym));

@@ -1,20 +1,32 @@
 {
+  "1022": {
+    "acronym": "EASE",
+    "cfp_url": "https://conf.researchr.org/home/ease-2027",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/ease/",
+    "deadline": "2027-01-22",
+    "event_date": "June 15 - 18, 2027",
+    "place": "Hanoi, Vietnam",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "1037": {
     "acronym": "ICFP",
-    "cfp_url": "https://icfp27.sigplan.org",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "cfp_url": "https://icfp27.sigplan.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/icfp/",
     "deadline": "2027-02-25",
-    "event_date": "Sun 26 September - Fri 1 October 2027",
+    "event_date": "September 26 - October 1, 2027",
     "place": "Nijmegen, Netherlands",
-    "source": "yeah-tiger",
-    "source_url": "https://github.com/yeah-tiger/yeah-tiger.github.io",
-    "timezone": null
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "106": {
     "acronym": "ALT",
     "cfp_url": "https://algorithmiclearningtheory.org/alt2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/alt/",
     "deadline": "2026-10-12",
     "event_date": "March 9-12, 2027",
@@ -25,20 +37,32 @@
   },
   "1181": {
     "acronym": "ICPC",
-    "cfp_url": "https://conf.researchr.org/track/icpc-2027/icpc-2027-research-track",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "cfp_url": "https://conf.researchr.org/home/icpc-2027",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/icpc/",
     "deadline": "2026-11-05",
-    "event_date": "April 26-27, 2027 with ICSE 2027",
+    "event_date": "April 25-26, 2027",
     "place": "Dublin, Ireland",
-    "source": "se-deadlines",
-    "source_url": "https://github.com/se-deadlines/se-deadlines.github.io",
-    "timezone": null
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
+  "1221": {
+    "acronym": "ICST",
+    "cfp_url": "https://conf.researchr.org/home/icst-2027",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/icst/",
+    "deadline": "2026-11-02",
+    "event_date": "May 17-21, 2027",
+    "place": "San Sebastian, Spain",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "1261": {
     "acronym": "VLDB",
     "cfp_url": "https://www.vldb.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/vldb/",
     "deadline": "2026-10-01",
     "event_date": "August 23 - August 27, 2027",
@@ -50,7 +74,7 @@
   "13": {
     "acronym": "CSCW",
     "cfp_url": "https://cscw.acm.org/rolling.html",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2027-08-26",
     "event_date": "October 2027 (TBD)",
@@ -62,7 +86,7 @@
   "138": {
     "acronym": "SAC",
     "cfp_url": "https://www.sigapp.org/sac/sac2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/sacrypt/index.html",
     "deadline": "2026-10-02",
     "event_date": "April 5-9",
@@ -74,7 +98,7 @@
   "1412": {
     "acronym": "ISSTA",
     "cfp_url": "https://conf.researchr.org/home/issta-2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/issta/",
     "deadline": "2027-01-11",
     "event_date": "September 7-10, 2027",
@@ -86,7 +110,7 @@
   "1442": {
     "acronym": "PETS",
     "cfp_url": "https://petsymposium.org/cfp27.php",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/pet/",
     "deadline": "2026-11-30",
     "event_date": "July 19-24, 2027",
@@ -95,10 +119,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
+  "1475": {
+    "acronym": "FSE",
+    "cfp_url": "https://fse.iacr.org/2027/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/fse/",
+    "deadline": "2026-12-01",
+    "event_date": "May 24-28, 2027",
+    "place": "Maastricht, Netherlands",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "UTC-12"
+  },
   "1521": {
     "acronym": "REFSQ",
     "cfp_url": "https://2027.refsq.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/refsq/",
     "deadline": "2026-11-12",
     "event_date": "April 12-15, 2027",
@@ -110,7 +146,7 @@
   "1548": {
     "acronym": "WWW",
     "cfp_url": "https://www2027.thewebconf.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/www/",
     "deadline": "2026-10-25",
     "event_date": "May 10 - 14, 2027",
@@ -122,7 +158,7 @@
   "1648": {
     "acronym": "NAACL",
     "cfp_url": "https://2027.naacl.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/naacl/",
     "deadline": "2026-10-12",
     "event_date": "June 1-5, 2027",
@@ -134,7 +170,7 @@
   "1667": {
     "acronym": "PAKDD",
     "cfp_url": "https://www.pakdd2027.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/pakdd/",
     "deadline": "2026-11-20",
     "event_date": "June 29-July 2, 2027",
@@ -146,7 +182,7 @@
   "1710": {
     "acronym": "CT-RSA",
     "cfp_url": "https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ctrsa/",
     "deadline": "2026-10-22",
     "event_date": "April 5-8, 2027",
@@ -155,10 +191,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-12"
   },
+  "1790": {
+    "acronym": "SPAA",
+    "cfp_url": "https://spaa.acm.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/spaa/",
+    "deadline": "2026-09-25",
+    "event_date": "June 5 - June 11, 2027",
+    "place": "Atlanta, GA, USA",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "18": {
     "acronym": "OOPSLA",
     "cfp_url": "https://2027.splashcon.org/track/splashoopsla2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/oopsla/",
     "deadline": "2026-10-14",
     "event_date": "October 10-15, 2027",
@@ -170,7 +218,7 @@
   "1841": {
     "acronym": "USENIX-Security",
     "cfp_url": "https://www.usenix.org/conference/usenixsecurity27",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/uss/",
     "deadline": "2027-01-26",
     "event_date": "August 11-13, 2027",
@@ -182,7 +230,7 @@
   "1842": {
     "acronym": "OSDI",
     "cfp_url": "https://www.usenix.org/conference/osdi27",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/osdi/",
     "deadline": "2026-12-08",
     "event_date": "July 7-9, 2027",
@@ -191,10 +239,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC"
   },
+  "1847": {
+    "acronym": "VMCAI",
+    "cfp_url": "https://conf.researchr.org/home/VMCAI-2027",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/vmcai/",
+    "deadline": "2026-09-30",
+    "event_date": "January 11-12, 2027",
+    "place": "Mexico City, Mexico",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "1894": {
     "acronym": "CHES",
     "cfp_url": "https://ches.iacr.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ches/",
     "deadline": "2026-10-15",
     "event_date": "September 6 - 9, 2027",
@@ -206,7 +266,7 @@
   "196": {
     "acronym": "ACL",
     "cfp_url": "https://2027.aclweb.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2027-01-05",
     "event_date": "August 17 - August 22, 2027",
@@ -218,7 +278,7 @@
   "1996": {
     "acronym": "DAC",
     "cfp_url": "https://dac.com/2027/authors/call-for-contributions",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/dac/",
     "deadline": "2026-11-18",
     "event_date": "July 11-14, 2027",
@@ -227,22 +287,34 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-8"
   },
+  "2047": {
+    "acronym": "ICDAR",
+    "cfp_url": "https://icdar2027.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/icdar/",
+    "deadline": "2027-02-20",
+    "event_date": "August 18 - 22, 2027",
+    "place": "Kuala Lumpur, Malaysia",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "2169": {
     "acronym": "ICWSM",
     "cfp_url": "https://www.icwsm.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/icwsm/",
     "deadline": "2027-01-15",
-    "event_date": "May 2027 (TBD)",
-    "place": "Edinburgh, UK",
-    "source": "fair-deadlines",
-    "source_url": "https://github.com/hcorinna/fair-deadlines",
-    "timezone": "UTC-12"
+    "event_date": "TBD",
+    "place": "Edinburgh, Scotland",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "2185": {
     "acronym": "EuroS&P",
     "cfp_url": "https://eurosp2027.ieee-security.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/eurosp/",
     "deadline": "2026-12-02",
     "event_date": "July 5 - 9, 2027",
@@ -254,7 +326,7 @@
   "2195": {
     "acronym": "EvoCOP",
     "cfp_url": "https://www.evostar.org/2027/evocop/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/evocop/",
     "deadline": "2026-11-01",
     "event_date": "March 31-April 2, 2027",
@@ -266,7 +338,7 @@
   "2218": {
     "acronym": "EvoApplications",
     "cfp_url": "https://www.evostar.org/2027/evoapps/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/evoapps/",
     "deadline": "2026-11-01",
     "event_date": "March 31-April 2, 2027",
@@ -278,7 +350,7 @@
   "2273": {
     "acronym": "ICLR",
     "cfp_url": "https://iclr.cc/Conferences/2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/iclr/",
     "deadline": "2026-09-25",
     "event_date": "April 26-30, 2027",
@@ -287,10 +359,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
+  "2278": {
+    "acronym": "ICPE",
+    "cfp_url": "https://icpe2027.spec.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": null,
+    "deadline": "2026-11-16",
+    "event_date": "May 24-28, 2027",
+    "place": "Gothenburg, Sweden",
+    "source": "ds-deadlines",
+    "source_url": "https://github.com/ds-deadlines/ds-deadlines.github.io",
+    "timezone": "Europe/Rome"
+  },
   "2280": {
     "acronym": "SANER",
     "cfp_url": "https://conf.researchr.org/home/saner-2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/wcre/",
     "deadline": "2026-09-25",
     "event_date": "March 9-12, 2027",
@@ -302,7 +386,7 @@
   "2281": {
     "acronym": "SEAMS",
     "cfp_url": "https://conf.researchr.org/track/seams-2027/seams-2027-research-track",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2026-10-21",
     "event_date": "April 26-27, 2027 with ICSE 2027",
@@ -314,7 +398,7 @@
   "2288": {
     "acronym": "TechDebt",
     "cfp_url": "https://conf.researchr.org/track/TechDebt-2027/TechDebt-2027-main",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2026-10-26",
     "event_date": "April 25-26, 2027 with ICSE 2027",
@@ -326,7 +410,7 @@
   "2319": {
     "acronym": "FPGA",
     "cfp_url": "https://www.isfpga.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/fpga/",
     "deadline": "2026-10-01",
     "event_date": "March 14 - March 16, 2027",
@@ -338,7 +422,7 @@
   "2335": {
     "acronym": "CHIIR",
     "cfp_url": "https://chiir2027.github.io/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2026-10-15",
     "event_date": "March 7 - March 11, 2027",
@@ -347,10 +431,22 @@
     "source_url": "https://github.com/hcorinna/fair-deadlines",
     "timezone": "UTC-12"
   },
+  "2336": {
+    "acronym": "MMSys",
+    "cfp_url": "https://2027.acmmmsys.org",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/mmsys/",
+    "deadline": "2026-11-19",
+    "event_date": "March 30 - April 2, 2027",
+    "place": "Ghent, Belgium",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "2337": {
     "acronym": "CAIN",
     "cfp_url": "https://conf.researchr.org/track/cain-2027/cain-2027-call-for-papers",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2026-10-30",
     "event_date": "April 25-26, 2027 with ICSE 2027",
@@ -362,7 +458,7 @@
   "2348": {
     "acronym": "CHASE",
     "cfp_url": "https://conf.researchr.org/track/chase-2027/chase-2027-papers",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2026-10-23",
     "event_date": "April 26-27, 2027 with ICSE 2027",
@@ -374,7 +470,7 @@
   "26": {
     "acronym": "KDD",
     "cfp_url": "https://kdd2027.kdd.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2027-02-08",
     "event_date": "August 1 - August 5, 2027",
@@ -386,7 +482,7 @@
   "28": {
     "acronym": "RecSys",
     "cfp_url": "https://recsys.acm.org/recsys27/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2027-04-20",
     "event_date": "August 23 - August 27, 2027",
@@ -398,19 +494,19 @@
   "29": {
     "acronym": "SIGIR",
     "cfp_url": "https://sigir2027.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/sigir/",
     "deadline": "2027-01-21",
-    "event_date": "July 18 - July 24, 2027",
+    "event_date": "July 18-24, 2027",
     "place": "San Jose, California, USA",
-    "source": "fair-deadlines",
-    "source_url": "https://github.com/hcorinna/fair-deadlines",
-    "timezone": "UTC-12"
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "31": {
     "acronym": "WSDM",
     "cfp_url": "https://wsdm-conference.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/wsdm/",
     "deadline": "2026-11-17",
     "event_date": "February 15 - 19, 2027",
@@ -422,7 +518,7 @@
   "331": {
     "acronym": "CAV",
     "cfp_url": "https://conferences.i-cav.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/cav/",
     "deadline": "2027-01-20",
     "event_date": "July 19-23, 2027",
@@ -434,7 +530,7 @@
   "39": {
     "acronym": "SIGMETRICS",
     "cfp_url": "https://www.sigmetrics.org/sigmetrics2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/sigmetrics/",
     "deadline": "2026-10-09",
     "event_date": "June 7-11, 2027",
@@ -446,7 +542,7 @@
   "408": {
     "acronym": "DCC",
     "cfp_url": "https://datacompressionconference.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/dcc/",
     "deadline": "2026-10-02",
     "event_date": "March 23-26, 2027",
@@ -458,19 +554,19 @@
   "422": {
     "acronym": "DIS",
     "cfp_url": "https://dis.acm.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/ACMdis/",
     "deadline": "2027-01-18",
-    "event_date": "June, 28 - July, 2, 2027",
+    "event_date": "June 28 - July 2, 2027",
     "place": "Stockholm, Sweden",
-    "source": "hci-deadlines",
-    "source_url": "https://github.com/hci-deadlines/hci-deadlines.github.io",
-    "timezone": "UTC-12"
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "44": {
     "acronym": "ICMR",
     "cfp_url": "https://www.icmr2027.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/mir/",
     "deadline": "2027-01-31",
     "event_date": "June 7-10, 2027",
@@ -479,10 +575,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-12"
   },
+  "45": {
+    "acronym": "Mobisys",
+    "cfp_url": "https://www.sigmobile.org/mobisys/2027/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/mobisys/",
+    "deadline": "2026-12-04",
+    "event_date": "June 21-25, 2027",
+    "place": "Ho Chi Minh City, Vietnam",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "46": {
     "acronym": "PODS",
     "cfp_url": "https://2027.sigmod.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/pods/",
     "deadline": "2026-12-10",
     "event_date": "June 13-19, 2027",
@@ -491,10 +599,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
+  "473": {
+    "acronym": "ECAI",
+    "cfp_url": "https://ecai2027.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/ecai/",
+    "deadline": "2027-04-14",
+    "event_date": "October 2-7, 2027",
+    "place": "Athens, Greece",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "481": {
     "acronym": "EUROGP",
     "cfp_url": "https://www.evostar.org/2027/eurogp/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/eurogp/",
     "deadline": "2026-11-01",
     "event_date": "March 31-April 2, 2027",
@@ -506,9 +626,9 @@
   "483": {
     "acronym": "ECIR",
     "cfp_url": "https://ecir2027.co.uk/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ecir/",
-    "deadline": "2026-10-02",
+    "deadline": "2026-10-05",
     "event_date": "March 21-25, 2027",
     "place": "Southampton, UK",
     "source": "ccf-deadlines",
@@ -517,20 +637,20 @@
   },
   "488": {
     "acronym": "ECOOP",
-    "cfp_url": "https://2027.ecoop.org",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "cfp_url": "https://2027.ecoop.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/ecoop/",
     "deadline": "2026-11-19",
-    "event_date": "Mon 28 June - Fri 2 July 2027",
+    "event_date": "June 28 - July 2, 2027",
     "place": "Turin, Italy",
-    "source": "yeah-tiger",
-    "source_url": "https://github.com/yeah-tiger/yeah-tiger.github.io",
-    "timezone": null
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "491": {
     "acronym": "ECML PKDD",
     "cfp_url": "https://ecmlpkdd.org/2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2027-03-15",
     "event_date": "September 20 - September 24, 2027",
@@ -539,10 +659,34 @@
     "source_url": "https://github.com/hcorinna/fair-deadlines",
     "timezone": "UTC-12"
   },
+  "494": {
+    "acronym": "Interspeech",
+    "cfp_url": "https://interspeech2027.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/interspeech/",
+    "deadline": "2027-02-09",
+    "event_date": "August 29 - September 2, 2027",
+    "place": "São Paulo, Brazil",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "UTC+0"
+  },
+  "512": {
+    "acronym": "ESANN",
+    "cfp_url": "https://www.esann.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/esann/",
+    "deadline": "2026-11-18",
+    "event_date": "April 21 - 23, 2027",
+    "place": "Bruges, Belgium and Online",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "UTC-8"
+  },
   "514": {
     "acronym": "ESOP",
     "cfp_url": "https://etaps.org/2027/conferences/esop/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": null,
     "deadline": "2026-10-15",
     "event_date": "Sat 10 - Thu 15 April 2027",
@@ -554,7 +698,7 @@
   "52": {
     "acronym": "FSE",
     "cfp_url": "https://conf.researchr.org/home/fse-2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/sigsoft/",
     "deadline": "2026-10-02",
     "event_date": "July 12-16, 2027",
@@ -563,22 +707,10 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
-  "525": {
-    "acronym": "EuroSys",
-    "cfp_url": "https://2027.eurosys.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": "https://dblp.org/db/conf/eurosys/",
-    "deadline": "2026-09-24",
-    "event_date": "April 19-24, 2027",
-    "place": "Rabat, Morocco",
-    "source": "ccf-deadlines",
-    "source_url": "https://github.com/ccfddl/ccf-deadlines",
-    "timezone": "AoE"
-  },
   "528": {
     "acronym": "EDBT",
     "cfp_url": "https://edbticdt2027.github.io/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/edbt/",
     "deadline": "2026-10-07",
     "event_date": "April 6-9, 2027",
@@ -587,22 +719,10 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
-  "533": {
-    "acronym": "FC",
-    "cfp_url": "https://fc27.ifca.ai/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": "https://dblp.org/db/conf/fc/",
-    "deadline": "2026-09-24",
-    "event_date": "February 8-12, 2027",
-    "place": "Barbados",
-    "source": "ccf-deadlines",
-    "source_url": "https://github.com/ccfddl/ccf-deadlines",
-    "timezone": "UTC-12"
-  },
   "56": {
     "acronym": "SIGMOD",
     "cfp_url": "https://2027.sigmod.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/sigmod/",
     "deadline": "2026-10-17",
     "event_date": "June 13-19, 2027",
@@ -614,7 +734,7 @@
   "599": {
     "acronym": "CSF",
     "cfp_url": "https://www.ieee-security.org/TC/CSF2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/csfw/index.html",
     "deadline": "2026-10-15",
     "event_date": "TBA",
@@ -626,7 +746,7 @@
   "604": {
     "acronym": "CVPR",
     "cfp_url": "https://cvpr.thecvf.com/Conferences/2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/cvpr/",
     "deadline": "2026-11-16",
     "event_date": "June 20-24, 2027",
@@ -638,7 +758,7 @@
   "61": {
     "acronym": "AsiaCCS",
     "cfp_url": "https://asiaccs2027.cityu.edu.mo/index.html",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ccs/",
     "deadline": "2026-12-11",
     "event_date": "July 12-16, 2027",
@@ -650,7 +770,7 @@
   "610": {
     "acronym": "SECON",
     "cfp_url": "https://secon2027.ieee-secon.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/secon/",
     "deadline": "2026-11-30",
     "event_date": "May 5-7, 2027",
@@ -662,7 +782,7 @@
   "629": {
     "acronym": "FG",
     "cfp_url": "https://fg2027.ieee-biometrics.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/fg/",
     "deadline": "2026-10-16",
     "event_date": "April 26-30, 2027",
@@ -674,7 +794,7 @@
   "65": {
     "acronym": "STOC",
     "cfp_url": "https://acm-stoc.org/stoc2027/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/stoc/",
     "deadline": "2026-11-02",
     "event_date": "June 6-11, 2027",
@@ -683,10 +803,22 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-12"
   },
+  "676": {
+    "acronym": "ICSME",
+    "cfp_url": "https://conf.researchr.org/home/icsme-2027",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/icsm/",
+    "deadline": "2027-03-05",
+    "event_date": "September 7-11, 2027",
+    "place": "Toronto, Canada",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "685": {
     "acronym": "IJCNN",
     "cfp_url": "https://ijcnn.org/2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ijcnn/",
     "deadline": "2027-01-31",
     "event_date": "June 14 - 18, 2027",
@@ -698,7 +830,7 @@
   "688": {
     "acronym": "IPDPS",
     "cfp_url": "https://www.ipdps.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ipps/",
     "deadline": "2026-10-08",
     "event_date": "June 1-5, 2027",
@@ -710,7 +842,7 @@
   "695": {
     "acronym": "CCGRID",
     "cfp_url": "https://hpcclab.org/ccgrid27/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ccgrid/",
     "deadline": "2026-12-01",
     "event_date": "May 24-27, 2027",
@@ -719,22 +851,58 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
+  "699": {
+    "acronym": "ISIT",
+    "cfp_url": "https://2027.ieee-isit.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/isit/",
+    "deadline": "2027-01-10",
+    "event_date": "June 27 - July 2, 2027",
+    "place": "Sorrento, Italy",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "711": {
     "acronym": "MSR",
-    "cfp_url": "https://conf.researchr.org/track/msr-2027/msr-2027-technical-papers",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": null,
+    "cfp_url": "https://2027.msrconf.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/msr/",
     "deadline": "2026-10-23",
-    "event_date": "April 26-27, 2027 with ICSE 2027",
+    "event_date": "April 26-27, 2027",
     "place": "Dublin, Ireland",
-    "source": "se-deadlines",
-    "source_url": "https://github.com/se-deadlines/se-deadlines.github.io",
-    "timezone": null
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
+  "723": {
+    "acronym": "NOMS",
+    "cfp_url": "https://noms2027.ieee-noms.org/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/noms/",
+    "deadline": "2026-11-09",
+    "event_date": "May 10-14, 2027",
+    "place": "Montreal, Canada",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
+  "724": {
+    "acronym": "PacificVis",
+    "cfp_url": "https://pacificvis2027.github.io/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/pacificvis/",
+    "deadline": "2026-11-09",
+    "event_date": "April 19-22, 2027",
+    "place": "Busan, South Korea",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
   },
   "725": {
     "acronym": "RTAS",
     "cfp_url": "https://2027.rtas.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/rtas/",
     "deadline": "2026-11-05",
     "event_date": "May 17-20, 2027",
@@ -746,7 +914,7 @@
   "750": {
     "acronym": "SP",
     "cfp_url": "https://sp2027.ieee-security.org/index.html",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/sp/",
     "deadline": "2026-11-17",
     "event_date": "May 17-19, 2027",
@@ -755,22 +923,10 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-12"
   },
-  "760": {
-    "acronym": "WCNC",
-    "cfp_url": "https://wcnc2027.ieee-wcnc.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
-    "dblp_url": "https://dblp.org/db/conf/wcnc/",
-    "deadline": "2026-10-05",
-    "event_date": "April 5-8, 2027",
-    "place": "Panama City, Panama",
-    "source": "ccf-deadlines",
-    "source_url": "https://github.com/ccfddl/ccf-deadlines",
-    "timezone": "UTC-4"
-  },
   "787": {
     "acronym": "DSN",
     "cfp_url": "https://dsn2027-berlin.github.io/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/dsn/",
     "deadline": "2026-12-02",
     "event_date": "June 22-25, 2027",
@@ -782,7 +938,7 @@
   "84": {
     "acronym": "PLDI",
     "cfp_url": "https://pldi27.sigplan.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/pldi/",
     "deadline": "2026-11-12",
     "event_date": "June 5-11, 2027",
@@ -791,12 +947,24 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "AoE"
   },
+  "871": {
+    "acronym": "COMPSAC",
+    "cfp_url": "https://ieeecompsac.computer.org/2027/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/compsac/",
+    "deadline": "2027-01-31",
+    "event_date": "July 13-16, 2027",
+    "place": "Tokyo, Japan",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "907": {
     "acronym": "ACNS",
     "cfp_url": "https://acns2027.isg.rhul.ac.uk/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/acns/",
-    "deadline": "2026-09-24",
+    "deadline": "2027-01-21",
     "event_date": "June 28 - July 1, 2027",
     "place": "Royal Holloway, Egham, UK",
     "source": "ccf-deadlines",
@@ -806,19 +974,31 @@
   "913": {
     "acronym": "AISTATS",
     "cfp_url": "https://virtual.aistats.org/Conferences/2027",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/aistats/",
     "deadline": "2026-10-06",
-    "event_date": "May 3, 2027",
+    "event_date": "May 3-6, 2027",
     "place": "Montréal, Canada",
     "source": "ccf-deadlines",
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-12"
   },
+  "918": {
+    "acronym": "CADE",
+    "cfp_url": "https://fscd-cade.science.ru.nl/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/cade/",
+    "deadline": "2027-02-22",
+    "event_date": "August 22-25, 2027",
+    "place": "Nijmegen, Netherlands",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "919": {
     "acronym": "ICAPS",
     "cfp_url": "https://icaps27.icaps-conference.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/icaps/",
     "deadline": "2026-12-14",
     "event_date": "June 27 - July 2, 2027",
@@ -829,20 +1009,20 @@
   },
   "922": {
     "acronym": "AAMAS",
-    "cfp_url": "https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "cfp_url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/ifaamas/",
-    "deadline": "2026-10-09",
-    "event_date": "May 03, 2027",
+    "deadline": "2026-10-08",
+    "event_date": "May 3-7, 2027",
     "place": "Hanoi, Vietnam",
     "source": "ccf-deadlines",
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
-    "timezone": "UTC+0"
+    "timezone": "AoE"
   },
   "949": {
     "acronym": "COLING",
     "cfp_url": "https://2027.coling-iccl.org/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/coling/",
     "deadline": "2026-10-12",
     "event_date": "May 9-14, 2027",
@@ -851,22 +1031,34 @@
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
     "timezone": "UTC-12"
   },
+  "950": {
+    "acronym": "RECOMB",
+    "cfp_url": "https://recomb.org/recomb2027/",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
+    "dblp_url": "https://dblp.org/db/conf/recomb/",
+    "deadline": "2026-11-04",
+    "event_date": "May 17-20, 2027",
+    "place": "Toronto, Canada",
+    "source": "ccf-deadlines",
+    "source_url": "https://github.com/ccfddl/ccf-deadlines",
+    "timezone": "AoE"
+  },
   "986": {
     "acronym": "ICDE",
     "cfp_url": "https://icde2027.github.io/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/icde/",
     "deadline": "2026-11-11",
     "event_date": "May 17-21, 2027",
     "place": "Copenhagen, Denmark",
     "source": "ccf-deadlines",
     "source_url": "https://github.com/ccfddl/ccf-deadlines",
-    "timezone": "UTC-7"
+    "timezone": "PT"
   },
   "988": {
     "acronym": "DASFAA",
     "cfp_url": "https://dasfaa2027.github.io/",
-    "checked_at": "2026-09-24T08:44:37.609687+00:00",
+    "checked_at": "2026-09-25T09:04:53.150171+00:00",
     "dblp_url": "https://dblp.org/db/conf/dasfaa/",
     "deadline": "2026-11-25",
     "event_date": "May 27-30, 2027",

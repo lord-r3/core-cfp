@@ -39,6 +39,12 @@
   ],
   "1053": [
     {
+      "accepted": 1705,
+      "rate": 29.6,
+      "submitted": 5753,
+      "year": 2026
+    },
+    {
       "accepted": 1249,
       "rate": 24.9,
       "submitted": 5020,
@@ -67,15 +73,15 @@
       "rate": 26.3,
       "submitted": 2845,
       "year": 2021
-    },
-    {
-      "accepted": 758,
-      "rate": 24.2,
-      "submitted": 3126,
-      "year": 2020
     }
   ],
   "11": [
+    {
+      "accepted": 109,
+      "rate": 21.2,
+      "submitted": 513,
+      "year": 2026
+    },
     {
       "accepted": 62,
       "rate": 16.9,
@@ -105,12 +111,6 @@
       "rate": 21.2,
       "submitted": 250,
       "year": 2020
-    },
-    {
-      "accepted": 32,
-      "rate": 14.5,
-      "submitted": 221,
-      "year": 2019
     }
   ],
   "1121": [
@@ -153,6 +153,12 @@
   ],
   "12": [
     {
+      "accepted": 486,
+      "rate": 16.7,
+      "submitted": 2906,
+      "year": 2026
+    },
+    {
       "accepted": 316,
       "rate": 13.9,
       "submitted": 2278,
@@ -181,12 +187,6 @@
       "rate": 19.9,
       "submitted": 795,
       "year": 2023
-    },
-    {
-      "accepted": 59,
-      "rate": 18.3,
-      "submitted": 323,
-      "year": 2022
     }
   ],
   "1209": [
@@ -229,6 +229,12 @@
   ],
   "1242": [
     {
+      "accepted": 142,
+      "rate": 21.0,
+      "submitted": 675,
+      "year": 2026
+    },
+    {
       "accepted": 123,
       "rate": 20.4,
       "submitted": 602,
@@ -257,15 +263,15 @@
       "rate": 19.5,
       "submitted": 400,
       "year": 2021
-    },
-    {
-      "accepted": 81,
-      "rate": 21.6,
-      "submitted": 375,
-      "year": 2020
     }
   ],
   "1261": [
+    {
+      "accepted": 370,
+      "rate": 27.9,
+      "submitted": 1324,
+      "year": 2025
+    },
     {
       "accepted": 280,
       "rate": 19.5,
@@ -295,12 +301,6 @@
       "rate": 25.0,
       "submitted": 827,
       "year": 2020
-    },
-    {
-      "accepted": 128,
-      "rate": 18.9,
-      "submitted": 677,
-      "year": 2019
     }
   ],
   "1313": [
@@ -419,6 +419,12 @@
   ],
   "14": [
     {
+      "accepted": 206,
+      "rate": 20.9,
+      "submitted": 984,
+      "year": 2025
+    },
+    {
       "accepted": 150,
       "rate": 27.3,
       "submitted": 549,
@@ -447,12 +453,6 @@
       "rate": 26.0,
       "submitted": 269,
       "year": 2018
-    },
-    {
-      "accepted": 75,
-      "rate": 29.2,
-      "submitted": 257,
-      "year": 2017
     }
   ],
   "1412": [
@@ -533,6 +533,12 @@
   ],
   "1548": [
     {
+      "accepted": 676,
+      "rate": 21.7,
+      "submitted": 3112,
+      "year": 2026
+    },
+    {
       "accepted": 409,
       "rate": 19.8,
       "submitted": 2062,
@@ -561,12 +567,6 @@
       "rate": 20.4,
       "submitted": 1736,
       "year": 2021
-    },
-    {
-      "accepted": 219,
-      "rate": 19.4,
-      "submitted": 1129,
-      "year": 2020
     }
   ],
   "1551": [
@@ -685,6 +685,12 @@
   ],
   "1701": [
     {
+      "accepted": 48,
+      "rate": 13.7,
+      "submitted": 350,
+      "year": 2026
+    },
+    {
       "accepted": 44,
       "rate": 22.0,
       "submitted": 200,
@@ -713,12 +719,6 @@
       "rate": 29.3,
       "submitted": 133,
       "year": 2021
-    },
-    {
-      "accepted": 28,
-      "rate": 20.0,
-      "submitted": 140,
-      "year": 2020
     }
   ],
   "18": [
@@ -726,6 +726,12 @@
       "accepted": 67,
       "rate": 44.4,
       "submitted": 151,
+      "year": 2025
+    },
+    {
+      "accepted": 147,
+      "rate": 33.5,
+      "submitted": 439,
       "year": 2025
     },
     {
@@ -751,12 +757,6 @@
       "rate": 37.4,
       "submitted": 211,
       "year": 2023
-    },
-    {
-      "accepted": 92,
-      "rate": 31.3,
-      "submitted": 294,
-      "year": 2022
     }
   ],
   "1839": [
@@ -767,8 +767,8 @@
       "year": 2026
     },
     {
-      "accepted": 37,
-      "rate": 22.2,
+      "accepted": 36,
+      "rate": 21.6,
       "submitted": 167,
       "year": 2025
     },
@@ -799,6 +799,12 @@
   ],
   "1840": [
     {
+      "accepted": 265,
+      "rate": 17.9,
+      "submitted": 1481,
+      "year": 2026
+    },
+    {
       "accepted": 211,
       "rate": 16.1,
       "submitted": 1311,
@@ -827,18 +833,18 @@
       "rate": 17.6,
       "submitted": 136,
       "year": 2021
-    },
-    {
-      "accepted": 63,
-      "rate": 14.3,
-      "submitted": 442,
-      "year": 2021
     }
   ],
   "1842": [
     {
-      "accepted": 53,
-      "rate": 15.6,
+      "accepted": 134,
+      "rate": 20.0,
+      "submitted": 669,
+      "year": 2026
+    },
+    {
+      "accepted": 48,
+      "rate": 14.2,
       "submitted": 339,
       "year": 2025
     },
@@ -856,8 +862,8 @@
     },
     {
       "accepted": 49,
-      "rate": 19.5,
-      "submitted": 251,
+      "rate": 19.4,
+      "submitted": 253,
       "year": 2022
     },
     {
@@ -865,15 +871,15 @@
       "rate": 18.8,
       "submitted": 165,
       "year": 2021
-    },
-    {
-      "accepted": 70,
-      "rate": 17.6,
-      "submitted": 398,
-      "year": 2020
     }
   ],
   "196": [
+    {
+      "accepted": 2222,
+      "rate": 33.9,
+      "submitted": 6564,
+      "year": 2026
+    },
     {
       "accepted": 1602,
       "rate": 29.1,
@@ -903,12 +909,6 @@
       "rate": 17.0,
       "submitted": 3350,
       "year": 2021
-    },
-    {
-      "accepted": 571,
-      "rate": 25.4,
-      "submitted": 2248,
-      "year": 2020
     }
   ],
   "2051": [
@@ -1103,6 +1103,12 @@
   ],
   "29": [
     {
+      "accepted": 239,
+      "rate": 22.3,
+      "submitted": 1071,
+      "year": 2025
+    },
+    {
       "accepted": 160,
       "rate": 20.2,
       "submitted": 791,
@@ -1131,15 +1137,15 @@
       "rate": 26.5,
       "submitted": 555,
       "year": 2020
-    },
-    {
-      "accepted": 84,
-      "rate": 19.7,
-      "submitted": 426,
-      "year": 2019
     }
   ],
   "31": [
+    {
+      "accepted": 100,
+      "rate": 16.3,
+      "submitted": 613,
+      "year": 2026
+    },
     {
       "accepted": 106,
       "rate": 17.5,
@@ -1169,15 +1175,15 @@
       "rate": 18.6,
       "submitted": 603,
       "year": 2021
-    },
-    {
-      "accepted": 91,
-      "rate": 14.8,
-      "submitted": 615,
-      "year": 2020
     }
   ],
   "32": [
+    {
+      "accepted": 161,
+      "rate": 18.9,
+      "submitted": 850,
+      "year": 2026
+    },
     {
       "accepted": 131,
       "rate": 23.0,
@@ -1207,15 +1213,15 @@
       "rate": 18.7,
       "submitted": 407,
       "year": 2021
-    },
-    {
-      "accepted": 77,
-      "rate": 18.3,
-      "submitted": 421,
-      "year": 2020
     }
   ],
   "331": [
+    {
+      "accepted": 54,
+      "rate": 16.9,
+      "submitted": 319,
+      "year": 2026
+    },
     {
       "accepted": 51,
       "rate": 16.7,
@@ -1245,15 +1251,15 @@
       "rate": 20.7,
       "submitted": 290,
       "year": 2021
-    },
-    {
-      "accepted": 43,
-      "rate": 17.9,
-      "submitted": 240,
-      "year": 2020
     }
   ],
   "38": [
+    {
+      "accepted": 327,
+      "rate": 29.1,
+      "submitted": 1124,
+      "year": 2026
+    },
     {
       "accepted": 306,
       "rate": 31.5,
@@ -1283,15 +1289,15 @@
       "rate": 33.6,
       "submitted": 444,
       "year": 2021
-    },
-    {
-      "accepted": 124,
-      "rate": 28.0,
-      "submitted": 443,
-      "year": 2020
     }
   ],
   "39": [
+    {
+      "accepted": 82,
+      "rate": 17.1,
+      "submitted": 479,
+      "year": 2026
+    },
     {
       "accepted": 66,
       "rate": 17.3,
@@ -1321,15 +1327,15 @@
       "rate": 0.0,
       "submitted": 106,
       "year": 2022
-    },
-    {
-      "accepted": 59,
-      "rate": 46.8,
-      "submitted": 126,
-      "year": 2022
     }
   ],
   "448": [
+    {
+      "accepted": 2626,
+      "rate": 18.5,
+      "submitted": 14206,
+      "year": 2026
+    },
     {
       "accepted": 1668,
       "rate": 24.8,
@@ -1359,15 +1365,15 @@
       "rate": 25.6,
       "submitted": 2540,
       "year": 2021
-    },
-    {
-      "accepted": 602,
-      "rate": 24.5,
-      "submitted": 2455,
-      "year": 2020
     }
   ],
   "45": [
+    {
+      "accepted": 68,
+      "rate": 22.5,
+      "submitted": 302,
+      "year": 2026
+    },
     {
       "accepted": 42,
       "rate": 18.0,
@@ -1397,12 +1403,6 @@
       "rate": 21.7,
       "submitted": 166,
       "year": 2021
-    },
-    {
-      "accepted": 34,
-      "rate": 19.4,
-      "submitted": 175,
-      "year": 2020
     }
   ],
   "46": [
@@ -1445,6 +1445,12 @@
   ],
   "479": [
     {
+      "accepted": 2834,
+      "rate": 27.1,
+      "submitted": 10473,
+      "year": 2026
+    },
+    {
       "accepted": 2395,
       "rate": 27.9,
       "submitted": 8585,
@@ -1473,19 +1479,19 @@
       "rate": 26.6,
       "submitted": 1561,
       "year": 2016
-    },
-    {
-      "accepted": 363,
-      "rate": 25.1,
-      "submitted": 1444,
-      "year": 2014
     }
   ],
   "48": [
     {
+      "accepted": 62,
+      "rate": 15.9,
+      "submitted": 390,
+      "year": 2026
+    },
+    {
       "accepted": 66,
       "rate": 17.9,
-      "submitted": 368,
+      "submitted": 369,
       "year": 2025
     },
     {
@@ -1511,15 +1517,15 @@
       "rate": 13.8,
       "submitted": 276,
       "year": 2019
-    },
-    {
-      "accepted": 39,
-      "rate": 16.2,
-      "submitted": 241,
-      "year": 2017
     }
   ],
   "488": [
+    {
+      "accepted": 30,
+      "rate": 30.6,
+      "submitted": 98,
+      "year": 2026
+    },
     {
       "accepted": 42,
       "rate": 41.2,
@@ -1549,12 +1555,6 @@
       "rate": 40.0,
       "submitted": 50,
       "year": 2021
-    },
-    {
-      "accepted": 30,
-      "rate": 42.3,
-      "submitted": 71,
-      "year": 2020
     }
   ],
   "525": [
@@ -1597,6 +1597,12 @@
   ],
   "56": [
     {
+      "accepted": 250,
+      "rate": 24.8,
+      "submitted": 1008,
+      "year": 2025
+    },
+    {
       "accepted": 18,
       "rate": 29.0,
       "submitted": 62,
@@ -1625,15 +1631,15 @@
       "rate": 28.2,
       "submitted": 660,
       "year": 2023
-    },
-    {
-      "accepted": 151,
-      "rate": 29.4,
-      "submitted": 514,
-      "year": 2022
     }
   ],
   "604": [
+    {
+      "accepted": 4089,
+      "rate": 25.4,
+      "submitted": 16092,
+      "year": 2026
+    },
     {
       "accepted": 2872,
       "rate": 22.1,
@@ -1663,12 +1669,6 @@
       "rate": 23.7,
       "submitted": 7015,
       "year": 2021
-    },
-    {
-      "accepted": 1470,
-      "rate": 22.1,
-      "submitted": 6656,
-      "year": 2020
     }
   ],
   "638": [
@@ -1711,6 +1711,12 @@
   ],
   "65": [
     {
+      "accepted": 211,
+      "rate": 28.1,
+      "submitted": 752,
+      "year": 2026
+    },
+    {
       "accepted": 219,
       "rate": 29.8,
       "submitted": 735,
@@ -1739,15 +1745,15 @@
       "rate": 28.1,
       "submitted": 498,
       "year": 2021
-    },
-    {
-      "accepted": 113,
-      "rate": 25.7,
-      "submitted": 440,
-      "year": 2020
     }
   ],
   "66": [
+    {
+      "accepted": 251,
+      "rate": 21.4,
+      "submitted": 1175,
+      "year": 2026
+    },
     {
       "accepted": 210,
       "rate": 22.2,
@@ -1777,15 +1783,15 @@
       "rate": 25.9,
       "submitted": 367,
       "year": 2021
-    },
-    {
-      "accepted": 97,
-      "rate": 21.6,
-      "submitted": 450,
-      "year": 2020
     }
   ],
   "725": [
+    {
+      "accepted": 27,
+      "rate": 23.5,
+      "submitted": 115,
+      "year": 2026
+    },
     {
       "accepted": 30,
       "rate": 27.5,
@@ -1815,12 +1821,6 @@
       "rate": 27.2,
       "submitted": 114,
       "year": 2021
-    },
-    {
-      "accepted": 29,
-      "rate": 26.9,
-      "submitted": 108,
-      "year": 2020
     }
   ],
   "745": [
@@ -1863,6 +1863,12 @@
   ],
   "748": [
     {
+      "accepted": 82,
+      "rate": 28.7,
+      "submitted": 286,
+      "year": 2026
+    },
+    {
       "accepted": 66,
       "rate": 30.7,
       "submitted": 215,
@@ -1891,12 +1897,6 @@
       "rate": 40.1,
       "submitted": 227,
       "year": 2021
-    },
-    {
-      "accepted": 69,
-      "rate": 39.7,
-      "submitted": 174,
-      "year": 2020
     }
   ],
   "792": [
@@ -1977,6 +1977,12 @@
   ],
   "82": [
     {
+      "accepted": 108,
+      "rate": 18.5,
+      "submitted": 585,
+      "year": 2027
+    },
+    {
       "accepted": 91,
       "rate": 24.5,
       "submitted": 371,
@@ -2005,12 +2011,6 @@
       "rate": 22.7,
       "submitted": 286,
       "year": 2022
-    },
-    {
-      "accepted": 61,
-      "rate": 23.6,
-      "submitted": 258,
-      "year": 2021
     }
   ],
   "84": [
@@ -2053,6 +2053,18 @@
   ],
   "94": [
     {
+      "accepted": 189,
+      "rate": 25.1,
+      "submitted": 752,
+      "year": 2026
+    },
+    {
+      "accepted": 156,
+      "rate": 24.3,
+      "submitted": 642,
+      "year": 2025
+    },
+    {
       "accepted": 143,
       "rate": 27.2,
       "submitted": 526,
@@ -2075,18 +2087,6 @@
       "rate": 24.0,
       "submitted": 430,
       "year": 2021
-    },
-    {
-      "accepted": 85,
-      "rate": 22.9,
-      "submitted": 371,
-      "year": 2020
-    },
-    {
-      "accepted": 81,
-      "rate": 21.4,
-      "submitted": 378,
-      "year": 2019
     }
   ],
   "98": [
@@ -2129,6 +2129,12 @@
   ],
   "986": [
     {
+      "accepted": 261,
+      "rate": 22.2,
+      "submitted": 1175,
+      "year": 2026
+    },
+    {
       "accepted": 300,
       "rate": 19.8,
       "submitted": 1518,
@@ -2157,12 +2163,6 @@
       "rate": 27.5,
       "submitted": 549,
       "year": 2021
-    },
-    {
-      "accepted": 129,
-      "rate": 22.7,
-      "submitted": 568,
-      "year": 2020
     }
   ]
 }

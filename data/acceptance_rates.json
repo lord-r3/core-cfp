@@ -1597,6 +1597,30 @@
   ],
   "56": [
     {
+      "accepted": 34,
+      "rate": 36.2,
+      "submitted": 94,
+      "year": 2026
+    },
+    {
+      "accepted": 95,
+      "rate": 37.7,
+      "submitted": 252,
+      "year": 2026
+    },
+    {
+      "accepted": 92,
+      "rate": 32.4,
+      "submitted": 284,
+      "year": 2026
+    },
+    {
+      "accepted": 128,
+      "rate": 37.9,
+      "submitted": 338,
+      "year": 2026
+    },
+    {
       "accepted": 250,
       "rate": 24.8,
       "submitted": 1008,
@@ -1607,30 +1631,6 @@
       "rate": 29.0,
       "submitted": 62,
       "year": 2024
-    },
-    {
-      "accepted": 50,
-      "rate": 26.5,
-      "submitted": 189,
-      "year": 2024
-    },
-    {
-      "accepted": 71,
-      "rate": 30.9,
-      "submitted": 230,
-      "year": 2024
-    },
-    {
-      "accepted": 74,
-      "rate": 25.8,
-      "submitted": 287,
-      "year": 2024
-    },
-    {
-      "accepted": 186,
-      "rate": 28.2,
-      "submitted": 660,
-      "year": 2023
     }
   ],
   "604": [
@@ -2097,8 +2097,8 @@
       "year": 2025
     },
     {
-      "accepted": 4035,
-      "rate": 25.7,
+      "accepted": 4037,
+      "rate": 25.8,
       "submitted": 15671,
       "year": 2024
     },
